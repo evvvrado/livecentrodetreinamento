@@ -39,7 +39,7 @@
     --background: #12141D;
     --background2: #1E2029;
     --fonte: 'SVN-Gilroy';
-    --fonte2: 'Inter';
+    --fonte2: 'Inter', sans-serif;
     --fontcolor: #fff;
     --descricao: #B3BEDA;
 }
@@ -455,3 +455,49 @@ progress {
   [hidden] {
     display: none !important;
   }
+
+
+
+/* CUSTOM DEF */
+
+.paragraph{
+  color: var(--descricao);
+  font-family: var(--fonte2);
+}
+
+.description{ 
+  color: var(--principal);
+}
+
+.topbar{
+  display:flex;
+  justify-content: center;
+  font-family: var(--fonte2)!important;
+
+  background: black; 
+
+  padding: 25px;
+}
+
+.topbar ul{ 
+  /*background-color: red;*/
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topbar ul li{
+  line-height: 65px;
+  margin-left: 35px;
+  display: inline;
+}
+.topbar ul li a{
+  color: var(--fontcolor)!important;
+  display: inline;
+  text-decoration: none;
+
+}
+
+.topbar img{
+  margin-right: 300px;
+}
