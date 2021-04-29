@@ -471,67 +471,46 @@ progress {
   color: var(--principal);
 }
 
-.topbar{
-  display:flex;
-  justify-content: center;
-  font-family: var(--fonte2)!important;
-
-  /*background: black;*/
-
-  padding: 25px;
+#header{  
+  height: 716px;
 }
 
-.topbar ul{ 
-  /*background-color: red;*/
+.back-header{
+  position: absolute;
+  width: 100%;
+}
+
+#topbar{
+  font-family: var(--fonte2)!important;
+  justify-content: space-between;
+}
+#topbar ul{ 
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-.topbar ul li{
+#topbar ul li{
   line-height: 65px;
-  margin-left: 70px;
+  margin-right: 35px;
   display: inline;
 }
-.topbar ul li a{
+#topbar ul li a{
   color: var(--fontcolor)!important;
-  display: inline;
   text-decoration: none;
+  font-size: 15px;
   transition: ease-in-out 0.32s ;
 }
-.topbar ul li a:hover{
+#topbar ul li a:hover{
   border-bottom: solid 1px var(--principal);
 }
 
-.topbar img{
-  margin-right: 200px;
-}
-
-.header{
-  display: block;
-  justify-content: center;
-  
-  height: 530px;
-}
-.org{
-  display: flex;
-  justify-content: center;
-}
-
-.header .back-header{
-  position: absolute;
-  z-index: -30;
-}
-
-.header .text-header{
-  float: right;
-}
 
 .header-form{
   padding: 54px;
   padding-top: 39px;
   width: 400px;
   height: 581.25px;
+
 
   background-color: var(--background3);
 }
@@ -585,4 +564,11 @@ progress {
   color: var(--background3);
 
   background-color: var(--principal);
+}
+
+
+.header-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
