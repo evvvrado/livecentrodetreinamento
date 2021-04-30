@@ -28,6 +28,13 @@
     src: local('Bebas'), url('../fonts/Bebas.ttf') format('otf');
 }
 
+@font-face {
+    font-family: 'Inters';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bebas'), url('../fonts/Inter.ttf') format('otf');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
@@ -40,7 +47,7 @@
     --background2: #1E2029;
     --background3: #2A2C34;
     --fonte: 'SVN-Gilroy';
-    --fonte2: 'Inter', sans-serif;
+    --fonte2: 'Inters', sans-serif;
     --fontcolor: #fff;
     --descricao: #B3BEDA;
 }
@@ -480,6 +487,13 @@ progress {
   width: 100%;
 }
 
+#home{   
+  background-image: url(../img/header2.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 2030px;
+}
+
 #topbar{
   font-family: var(--fonte2)!important;
   justify-content: space-between;
@@ -491,7 +505,7 @@ progress {
 
 #topbar ul li{
   line-height: 65px;
-  margin-right: 35px;
+  margin-left: 52px;
   display: inline;
 }
 #topbar ul li a{
@@ -508,6 +522,7 @@ progress {
 .header-form{
   padding: 54px;
   padding-top: 39px;
+  margin-top: 30px;
   width: 400px;
   height: 581.25px;
 
@@ -571,4 +586,13 @@ progress {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-right: -150px;
+}
+
+.header-text .title{
+  font-size: 52px;
+}
+
+.header-text .paragraph{
+  font-size: 20px;
 }
