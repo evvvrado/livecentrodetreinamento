@@ -596,3 +596,28 @@ progress {
 .header-text .paragraph{
   font-size: 20px;
 }
+
+.foater-bar{
+  border-bottom: 96px solid white;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  height: 0;
+  width: 1200px;
+
+  position: fixed;
+  left: calc(50% - 600px);
+  bottom: 0;
+
+    
+  color: var(--principal);
+  font-size: 32px;
+
+  display: flex;
+  justify-content: space-around;
+
+  cursor: pointer;
+}
+
+.foater-bar-names{
+  font-size: 18px;
+}
