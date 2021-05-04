@@ -472,10 +472,15 @@ progress {
 .paragraph{
   color: var(--descricao);
   font-family: var(--fonte2);
+  font-size: 15px;
 }
 
 .description{ 
   color: var(--principal);
+}
+.title{
+  /* font-size: calc(20px + 1vw); */
+  font-size: 30px;
 }
 
 #header{  
@@ -603,11 +608,13 @@ progress {
 }
 
 .header-text .title{
-  font-size: 35px;
+  font-size: 45px;
 }
 
 .header-text .paragraph{
   font-size: 15px;
+  font-weight: lighter;
+  color: white;
 }
 
 .foater-bar{
@@ -633,4 +640,36 @@ progress {
 
 .foater-bar-names{
   font-size: 18px;
+}
+
+#second-header-text{
+  margin-top: 100px;
+}
+
+#second-header .title{
+  margin-bottom: 30px;
+}
+  
+@media (min-width: 1130px){
+  
+  .container-fav{
+    width: 1100px;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media (max-width: 991px){
+  #topbar ul{
+    display: none;
+  }
+
+  #topbar img{
+    margin: auto;
+  }
+  .header-form{
+    width:100%;
+    margin-top: 480px;  
+  }
 }
