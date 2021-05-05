@@ -484,7 +484,7 @@ progress {
 }
 
 #header{  
-  height: 716px;
+  height: 610px;
 }
 
 .back-header{
@@ -502,6 +502,7 @@ progress {
 #topbar{
   font-family: var(--fonte2)!important;
   justify-content: space-between;
+  z-index: 9000;
 }
 
 #topbar ul{ 
@@ -604,7 +605,10 @@ progress {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: -65px;
+  margin-top: -105px;
+  
+  margin-left: 35px;
+  
 }
 
 .header-text .title{
@@ -643,13 +647,27 @@ progress {
 }
 
 #second-header-text{
-  margin-top: 100px;
+  margin-top: 135px;
 }
 
 #second-header .title{
   margin-bottom: 30px;
 }
+
+#third-header{
+  margin-top: 150px;
+  text-align: center;
+}
+
+#third-header .title{
+  color: var(--principal);
+  margin-bottom: 35px;
+}
+
+#third-header .paragraph{
   
+}
+
 @media (min-width: 1130px){
   
   .container-fav{
