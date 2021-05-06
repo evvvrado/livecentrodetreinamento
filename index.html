@@ -152,15 +152,16 @@
                     
                 
                 <div  class="col-lg-6 col-12 d-flex justify-content-lg-center">
-                    <img src="./img/arms-woman.png" height="600px">
+                    <img src="./img/arms-woman.png" height="600px" class="d-none d-lg-block ">
                 </div>
 
             </div>
         </div>
     </div>
-<!--
+
+
     <div id="background-header" class="container">
-        <svg width="1420" style="z-index: -4; position:absolute" viewBox="0 0 1920 1497" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg style="z-index: -4;position:absolute" viewBox="0 0 1920 1497" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect x="-266.681" y="0.536621" width="2351.93" height="1495.65" fill="url(#pattern0)"/>
             <rect x="-266.681" y="0.536621" width="2351.93" height="1495.65" fill="url(#pattern1)"/>
             <rect x="-266.681" y="0.536621" width="2351.93" height="1495.65" fill="url(#pattern2)"/>
@@ -198,17 +199,20 @@
         
     <div id="third-header" class="container-fluid py-4">
         
-        <div id="third-header-fav" class="container-fav">
+        <div id="third-header-fav" class="container-fav justify-content-center">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title">Veja o que está perdendo</h1>
+                    <h6 class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Libero, mattis et cursus lectus nunc a ut.</h6>
+                </div>
 
-            <h1 class="title">Veja o que está perdendo</h1>
-            <h6 class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Libero, mattis et cursus lectus nunc a ut.</h6>
+                <div class="col-12 d-flex justify-content-center">
+                    <div id="third-header-img">
+                        <img src="img/video.png"  style="max-width: 900px; width: calc(100vw - 250px);">
+                    </div>
+                </div>
         
-
-            <div id="third-header-img">
-                <img src="img/video.png"  width="900px">
-            </div>
-        
-
+          </div>
         </div>
     
     
@@ -223,14 +227,19 @@
 
             <div id="gallery">
 
-                <div id="gallery-pic-1" class="gallery-pic"><img src="./img/gallery (1).png"></div>
-                <div id="gallery-pic-2" class="gallery-pic"><img src="./img/gallery (2).png"></div>
-                <div id="gallery-pic-3" class="gallery-pic"><img src="./img/gallery (3).png"></div>
-                <div id="gallery-pic-4" class="gallery-pic"><img src="./img/gallery (4).png"></div>
-                <div id="gallery-pic-5" class="gallery-pic"><img src="./img/gallery (5).png"></div>
-                <div id="gallery-pic-6" class="gallery-pic"><img src="./img/gallery (6).png"></div>
-                <div id="gallery-pic-7" class="gallery-pic"><img src="./img/gallery (7).png"></div>
-                <div id="gallery-pic-8" class="gallery-pic"><img src="./img/gallery (8).png"></div> 
+                <div class="row">
+                    <div id="gallery-pic-1" class="gallery-pic col-12 col-lg-3"><img src="./img/gallery (1).png"></div>
+                    <div id="gallery-pic-2" class="gallery-pic col-12 col-lg-3"><img src="./img/gallery (2).png"></div>
+                    <div id="gallery-pic-3" class="gallery-pic col-12 col-lg-3"><img src="./img/gallery (3).png"></div>
+                    <div id="gallery-pic-4" class="gallery-pic col-12 col-lg-3"><img src="./img/gallery (4).png"></div>
+                </div>
+
+                <div class="row">
+                    <div id="gallery-pic-5" class="gallery-pic col-12 col-lg-3"><img src="./img/gallery (5).png"></div>
+                    <div id="gallery-pic-6" class="gallery-pic col-12 col-lg-3"><img src="./img/gallery (6).png"></div>
+                    <div id="gallery-pic-7" class="gallery-pic col-12 col-lg-3"><img src="./img/gallery (7).png"></div>
+                    <div id="gallery-pic-8" class="gallery-pic col-12 col-lg-3"><img src="./img/gallery (8).png"></div> 
+                </div>
 
                 <div id="gallery-text">
                     <a class="paragraph" style="color: var(--principal)">
@@ -248,27 +257,34 @@
     </div>
 
     <div id="backgroundblack" class="position-fixed w-100 h-100 invisible" style="transition: 0.32s; background-color: rgba(0,0,0,0.5); top: 0; left:0;" onclick="document.getElementById('alternative-form').setAttribute('class', ' '); document.getElementById('backgroundblack').setAttribute('class', 'position-fixed w-100 h-100 invisible')"></div>
+    
+
+
     <div id="fifth-header" class="container-fluid py-4">
 
         <div id="fifth-header-fav" class="container-fav">    
+            <div class="row">
+                <div id="fifth-header-text" class="col-12 col-lg-6">
+
+                    <h6 class="description">Acelerador</h6>
+                    <h1 class="title">Acelerador de Resultados<br> em 5 Semenas: Nutrição<br> + Personal Trainer</h1>
+                    <h6 class="paragraph">Programa de 5 semanas de acompanhamento com<br> personal trainer e nutricionista para potencialisar<br> seus resultados </h6>
+                    <h6 class="paragraph mb-5 mt-5">Saiba como aumentar em 3x seus resultados</h6>
+
+                    <div id="fifth-header-button" onclick="document.getElementById('alternative-form').setAttribute('class', 'onform'); document.getElementById('backgroundblack').setAttribute('class', 'position-fixed w-100 h-100 visible')">Preciso disso</div>
+                </div>
             
-            <div id="fifth-header-text">
-                <h6 class="description">Acelerador</h6>
-                <h1 class="title">Acelerador de Resultados<br> em 5 Semenas: Nutrição<br> + Personal Trainer</h1>
-                <h6 class="paragraph">Programa de 5 semanas de acompanhamento com<br> personal trainer e nutricionista para potencialisar<br> seus resultados </h6>
-                <h6 class="paragraph mb-5 mt-5">Saiba como aumentar em 3x seus resultados</h6>
-
-                <div id="fifth-header-button" onclick="document.getElementById('alternative-form').setAttribute('class', 'onform'); document.getElementById('backgroundblack').setAttribute('class', 'position-fixed w-100 h-100 visible')">Preciso disso</div>
+                 <div id="fifth-header-img" class="col-6 d-flex justify-content-lg-center">
+                    <img src="img/arms-man.png"  width="750px" class="d-none d-lg-block">
+                 </div>
             </div>
 
-
-            <div id="fifth-header-img">
-                <img src="img/arms-man.png"  width="750px">
-            </div>
+           
         
         </div>
 
     </div>
+
 
      <div class="form" id='alternative-form'>
                         
@@ -299,28 +315,30 @@
 
     </div>
 
+
     <div id="sixth-header" class="container-fluid py-4">
 
         <div id="sixth-header-fav" class="container-fav" >
 
-            <h1 class="title">Modalidades Coletivas</h1>
-            <h6 class="paragraph">Temos diversas modalidades e certamente uma ou<br> mais é feita para você!</h6>
+            <div class="row justify-content-center">
+                <div id="sixth-header-text">
+                    <h1 class="title">Modalidades Coletivas</h1>
+                    <h6 class="paragraph">Temos diversas modalidades e certamente uma ou<br> mais é feita para você!</h6>
+                </div>
+             </div>
 
 
-
+        <div id="modalidades" class="row justify-content-center align-content-center">
+            <div id="modalidade1" class="modalidade col"><img src="./img/modalidade (1).png"></div>
+            <div id="modalidade2" class="modalidade col"><img src="./img/modalidade (2).png"></div>
+            <div id="modalidade3" class="modalidade col"><img src="./img/modalidade (3).png"></div>
+            <div id="modalidade4" class="modalidade col"><img src="./img/modalidade (4).png"></div>
+            <div id="modalidade5" class="modalidade col"><img src="./img/modalidade (5).png"></div>
         </div>
 
-        
-        <div id="modalidades">
-            <div id="modalidade1" class="modalidade"></div>
-            <div id="modalidade2" class="modalidade"></div>
-            <div id="modalidade3" class="modalidade"></div>
-            <div id="modalidade4" class="modalidade"></div>
-            <div id="modalidade5" class="modalidade"></div>
         </div>
-
     </div>
-
+<!--
     <div id="seventh-header" class="container-fluid py-4">
 
         <div id="seventh-header-fav" class="container-fav" >
