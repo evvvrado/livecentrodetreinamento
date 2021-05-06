@@ -483,20 +483,15 @@ progress {
   font-size: 30px;
 }
 
-#header{  
-  height: 610px;
+#header{ 
+  background-image: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .back-header{
   position: absolute;
   width: 100%;
-}
-
-#home{   
-  background-image: url(../img/header.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 1540px;
 }
 
 #topbar{
@@ -513,7 +508,7 @@ progress {
 
 #topbar ul li{
   line-height: 65px;
-  margin-left: 42px;
+  padding: 25px;
   display: inline;
 }
 #topbar ul li a{
@@ -531,7 +526,7 @@ progress {
   padding: 45px;
   padding-top: 20px;
   width: 350px;
-  height: 465px;
+  height: auto;
 
 
   background-color: var(--background3);
@@ -600,15 +595,95 @@ progress {
   background-color: var(--principal);
 }
 
+
+.onform{
+  left: 0!important;
+}
+
 #alternative-form{
   position: fixed;
   top:35px;
-  left: -500px;
+  left: -100vw;
 
   transition: 0.32s;
   margin: 0 auto;
 
+  padding: 45px;
+  padding-top: 20px;
+  width: 350px;
+  height: 465px;
+
+  color: var(--background);
+  background-color: var(--fontcolor);
+
   z-index: 9999;
+}
+
+#alternative-form button{
+  padding: 15px 20px;
+  
+  border:none;
+  border-radius: 4px ;
+
+  width: 100%;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--background3);
+
+  background-color: var(--principal);
+}
+  
+
+#alternative-form .subtitle{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+#alternative-form .paragraph{
+  font-size: 15px;
+  color: var(--background3);
+}
+#alternative-form .form-component{
+  margin-bottom: 20px;
+  /*background-color: blue;*/
+}
+
+
+#alternative-form .form-component label{  
+  color: var(--background1)!important;
+  font-size: 12px;
+  font-family: var(--fonte2);
+
+}
+
+
+#alternative-form .form-component input{
+
+  width: 100%;
+  height: 40px;
+  padding-left: 35px;
+
+  outline-color: var(--background2);
+
+  color: var(--background2)!important;
+  font-family: var(--fonte2);
+  font-size: 12px;
+
+  border: 1px solid var(--background2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  background-color: transparent;
+}
+
+.alternative-iconlabel{  
+  position: absolute;  
+  font-size: 17px;
+  
+  color: var(--principal);
+  margin-top: 10px;
+  left: 55px;
+
 }
 
 .header-text{
@@ -778,10 +853,20 @@ progress {
     margin: 0 auto;
   }
 
+  #header{
+    background-position: top center;
+  }
+
 }
 
 
 @media (max-width: 991px){
+
+  .container-fav{
+    width: 100%;
+    margin: 0 auto;
+  }
+
   #topbar ul{
     display: none;
   }
@@ -791,6 +876,8 @@ progress {
   }
   .header-form{
     width:100%;
-    margin-top: 480px;  
+    margin-top: 200px;  
   }
+
+
 }

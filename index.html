@@ -28,72 +28,86 @@
 
     <!-- <img src="img/header.png" class="back-header"> -->
     <div id="header" class="container-fluid py-4">
-    <div id="container-fav" class="container-fav">
+        <div id="container-fav" class="container-fav">
 
 
-        <div id="topbar" class="row col-12">
+            <div id="topbar" class="row">
 
-        <a href="/""><img id="logo" src="img/logo.png"  height="50px"></a>
+                <div class="col">
+                    <a href="/"><img id="logo" src="img/logo.png"></a>
+                </div>  
+                
+                
+                <ul>
+
+                    <li class="col"><a href="#">Home</a></li>
+                    <li class="col"><a href="#">Quem Somos</a></li>
+                    <li class="col"><a href="#">Planos</a></li>
+                    <li class="col"><a href="#">Modalidades</a></li>
+                    <li class="col"><a href="#">Blog</a></li>
+                    <li class="col"><a href="#"><i class="far fa-user-circle"></i>  Área do Cliente</a></li>
+
+                </ul>   
+                
+                   
+            </div>
+                
+            <!-- FORMUlÁRIO PRINCIPAL-->
+            <div class="row flex-lg-row-reverse"">
+
+
+                <div class="col-lg-6 col-12 d-flex justify-content-lg-end">
+                    <div class="header-text">
+                        <h1 class="title">Busque um<br>Resultado</h1>
+                        <p class="paragraph">Temos diversos planos para você<br>não deixar de exercitar seu corpo</p>
+                    </div>
+                </div> 
+
+                <div class="col-lg-6 col-12">
+                
+                    <div class="form header-form">
+                                
+                        <h2 class="subtitle">Deixe seu contato</h2>
+                        <p class="paragraph">Venha sentir a nossa vibe</p>
+                        <hr>
+        
+                        <form>
+                            <div class="form-component">
+                                <label class="description">Nome completo do Títular</label>
+                                <input type="text"><i class="fas fa-user-friends iconlabel"></i></input>
+                            </div>
+        
+                            <div class="form-component">
+                                <label class="description">Email do Titular</label>
+                                <input type="text"><i class="far fa-envelope iconlabel"></i></input>
+                            </div>
+        
+                            <div class="form-component">
+                                <label class="description">Telefone do Titular</label>
+                                <input type="text"><i class="fas fa-mobile-alt iconlabel" style="left: 72.5px"></i></input>
+                            </div>
+        
+                            <button>Quero ser Fit</button>
+        
+        
+                        </form>
+        
+                    </div>
+                </div> 
+
+                
+                       
+ 
+                
+        
                             
-            <ul>
-
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Modalidades</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#"><i class="far fa-user-circle"></i>  Área do Cliente</a></li>
-
-            </ul>                   
-
-               
-         </div>
-            
-         <!-- FORMUlÁRIO PRINCIPAL-->
-        <div class="col-12 row" style="justify-content: space-between;">
-            
-            <div class="form header-form">
-                        
-                <h2 class="subtitle">Deixe seu contato</h2>
-                <p class="paragraph">Venha sentir a nossa vibe</p>
-            <hr>
-
-                <form>
-                    <div class="form-component">
-                    <label class="description">Nome completo do Títular</label>
-                    <input type="text"><i class="fas fa-user-friends iconlabel"></i></input>
-                    </div>
-
-                    <div class="form-component">
-                        <label class="description">Email do Titular</label>
-                        <input type="text"><i class="far fa-envelope iconlabel"></i></input>
-                    </div>
-
-                    <div class="form-component">
-                        <label class="description">Telefone do Titular</label>
-                        <input type="text"><i class="fas fa-mobile-alt iconlabel" style="left: 72.5px"></i></input>
-                    </div>
-
-                    <button>Quero ser Fit</button>
-
-
-                </form>
-
+                
             </div>
-                        
-            <div class="header-text">
-                <h1 class="title">Busque um<br>Resultado</h1>
-                <p class="paragraph">Temos diversos planos para você<br>não deixar de exercitar seu corpo</p>
-            </div>
-
-                    
         </div>
-
-    </div>
     </div>
             
 
-    <div class="foater-bar" style="display: none">
+    <!-- <div class="foater-bar" style="display: none">
         <span>Unidades</span>
         <i class="fas fa-angle-up"></i> 
 
@@ -102,45 +116,49 @@
             <span><i class="fas fa-map-marker-alt" style="width: 32px; height: 32px;"></i> Arvore Grande</span>
         </div>
 
-    </div>
+    </div> -->
         
         
-    </div>
+    
    
          
-    <div id="second-header" class="container-fluid py-4">
+    <div id="second-header" class="container-fluid py-4 overflow-hidden">
         
-        <div id="second-header-fav" class="container-fav" style="display:flex;"">
-            <div id="second-header-text">
-                <h6 class="description">Quem somos</h6>
-                <h1 class="title">Por que somos</h1>
-              
+        <div id="second-header-fav" class="container-fav d-flex">
 
-                <svg height="70" viewBox="0 0 474 80" fill="none" style="margin-bottom: 35px;" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M36.1279 18.186H19.2198V61.9017H35.8786C51.5405 61.9017 60.7123 52.5352 60.7123 39.9191V39.7927C60.7123 27.18 51.6635 18.186 36.1279 18.186ZM48.357 40.1087C48.357 47.1668 43.5517 51.1615 36.2542 51.1615H31.3226V28.8663H36.2508C43.5517 28.8663 48.3536 32.9874 48.3536 39.9823V40.1087H48.357ZM178.69 44.6656H199.655V35.1095H178.69V28.4273H201.839V18.186H166.71V61.9017H202.151V51.5973H178.69V44.6656ZM67.3253 61.9017H79.4281V18.186H67.3253V61.9017ZM431.954 51.5973V44.6656H452.92V35.1095H431.954V28.4273H455.103V18.186H419.975V61.9017H455.416V51.5973H431.954ZM265.23 44.6656H322.371V35.1095H265.23V28.4273H324.555V18.186H253.254V61.9017H324.87V51.5973H265.23V44.6656ZM359.075 41.2928L341.107 18.186H329.812V61.9017H341.792V37.9201L360.511 61.9017H371.055V18.186H359.075V41.2928ZM247.136 33.177V33.0506C247.136 28.7399 245.827 25.4304 243.268 22.8726C240.337 19.9389 235.718 18.1894 229.042 18.1894H208.388V61.9017H220.491V48.6636H225.858L234.654 61.905H248.568L238.147 46.6679C243.58 44.3529 247.136 39.9191 247.136 33.177ZM235.033 33.9886C235.033 37.1751 232.601 39.1708 228.543 39.1708H220.494V28.6169H228.48C232.474 28.6169 235.03 30.3664 235.03 33.8622V33.9886H235.033ZM376.422 28.8031H389.462V61.9017H401.568V28.8031H414.671V18.186H376.422V28.8031Z" fill="url(#paint0_linear)"/>
-                    <path d="M22.606 1.20986V9.26581H10.131V70.7598H22.6094V78.8157H1.07887V1.20986H22.606ZM23.5498 0.268555H22.6094H1.07887H0.138428V1.20986V78.8157V79.7604H1.07887H22.606H23.5465V78.8157V70.7598V69.8185H22.606H11.0715V10.2104H22.606H23.5465V9.26913V1.20986V0.268555H23.5498Z" fill="white"/>
-                    <path d="M472.54 1.20937V78.8152H451.012V70.7593H463.491V9.26865H451.012V1.20937H472.54ZM473.483 0.268066H472.54H451.012H450.072V1.20937V9.26532V10.2066H451.012H462.547V69.818H451.012H450.072V70.7593V78.8152V79.7599H451.012H472.54H473.483V78.8152V1.20937V0.268066Z" fill="white"/>
-                    <path d="M133.612 5.45699L144.664 11.5771L138.284 23.4315H160.635V34.7737H132.179L127.075 44.2566H160.635V55.5988H120.967L110.646 74.7774L99.5929 68.6573L106.621 55.5988H85.5593V44.2566H112.726L117.83 34.7737H85.5593V23.4315H123.935L133.612 5.45699ZM133.233 4.1731L132.781 5.01129L123.373 22.4902H85.5593H84.6189V23.4349V34.7771V35.7184H85.5593H116.252L112.164 43.3153H85.5593H84.6189V44.2566V55.5988V56.5434H85.5593H105.043L98.7621 68.2116L98.3201 69.0331L99.1343 69.4855L110.187 75.6056L111.021 76.068L111.473 75.2298L121.529 56.5467H160.632H161.576V55.6021V44.2599V43.3186H160.632H128.65L132.741 35.7217H160.635H161.579V34.7804V23.4382V22.4936H160.635H139.862L145.495 12.0295L145.937 11.2079L145.123 10.7556L134.07 4.63543L133.233 4.1731Z" fill="white"/>
-                    <defs>
-                        <linearGradient id="paint0_linear" x1="15.5743" y1="45.2044" x2="476.392" y2="40.0439" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#F7941D"/>
-                            <stop offset="1" stop-color="#EF4136"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
-            
-                <h4 class="paragraph" style="width: 350px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero, mattis et cursus lectus nunc a ut. Condimentum viverra lacus ut volutpat cursus. Tortor, viverra adipiscing ipsum viverra. Iaculis blandit leo enim sociis aenean ullamcorper quam nam mauris.</h4>
+            <div class="row">
+                <div id="second-header-text" class="col-lg-6 col-12">
+                    <h6 class="description">Quem somos</h6>
+                    <h1 class="title">Por que somos</h1>
+                
+
+                    <svg height="70" viewBox="0 0 474 80" fill="none" style="margin-bottom: 35px;" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.1279 18.186H19.2198V61.9017H35.8786C51.5405 61.9017 60.7123 52.5352 60.7123 39.9191V39.7927C60.7123 27.18 51.6635 18.186 36.1279 18.186ZM48.357 40.1087C48.357 47.1668 43.5517 51.1615 36.2542 51.1615H31.3226V28.8663H36.2508C43.5517 28.8663 48.3536 32.9874 48.3536 39.9823V40.1087H48.357ZM178.69 44.6656H199.655V35.1095H178.69V28.4273H201.839V18.186H166.71V61.9017H202.151V51.5973H178.69V44.6656ZM67.3253 61.9017H79.4281V18.186H67.3253V61.9017ZM431.954 51.5973V44.6656H452.92V35.1095H431.954V28.4273H455.103V18.186H419.975V61.9017H455.416V51.5973H431.954ZM265.23 44.6656H322.371V35.1095H265.23V28.4273H324.555V18.186H253.254V61.9017H324.87V51.5973H265.23V44.6656ZM359.075 41.2928L341.107 18.186H329.812V61.9017H341.792V37.9201L360.511 61.9017H371.055V18.186H359.075V41.2928ZM247.136 33.177V33.0506C247.136 28.7399 245.827 25.4304 243.268 22.8726C240.337 19.9389 235.718 18.1894 229.042 18.1894H208.388V61.9017H220.491V48.6636H225.858L234.654 61.905H248.568L238.147 46.6679C243.58 44.3529 247.136 39.9191 247.136 33.177ZM235.033 33.9886C235.033 37.1751 232.601 39.1708 228.543 39.1708H220.494V28.6169H228.48C232.474 28.6169 235.03 30.3664 235.03 33.8622V33.9886H235.033ZM376.422 28.8031H389.462V61.9017H401.568V28.8031H414.671V18.186H376.422V28.8031Z" fill="url(#paint0_linear)"/>
+                        <path d="M22.606 1.20986V9.26581H10.131V70.7598H22.6094V78.8157H1.07887V1.20986H22.606ZM23.5498 0.268555H22.6094H1.07887H0.138428V1.20986V78.8157V79.7604H1.07887H22.606H23.5465V78.8157V70.7598V69.8185H22.606H11.0715V10.2104H22.606H23.5465V9.26913V1.20986V0.268555H23.5498Z" fill="white"/>
+                        <path d="M472.54 1.20937V78.8152H451.012V70.7593H463.491V9.26865H451.012V1.20937H472.54ZM473.483 0.268066H472.54H451.012H450.072V1.20937V9.26532V10.2066H451.012H462.547V69.818H451.012H450.072V70.7593V78.8152V79.7599H451.012H472.54H473.483V78.8152V1.20937V0.268066Z" fill="white"/>
+                        <path d="M133.612 5.45699L144.664 11.5771L138.284 23.4315H160.635V34.7737H132.179L127.075 44.2566H160.635V55.5988H120.967L110.646 74.7774L99.5929 68.6573L106.621 55.5988H85.5593V44.2566H112.726L117.83 34.7737H85.5593V23.4315H123.935L133.612 5.45699ZM133.233 4.1731L132.781 5.01129L123.373 22.4902H85.5593H84.6189V23.4349V34.7771V35.7184H85.5593H116.252L112.164 43.3153H85.5593H84.6189V44.2566V55.5988V56.5434H85.5593H105.043L98.7621 68.2116L98.3201 69.0331L99.1343 69.4855L110.187 75.6056L111.021 76.068L111.473 75.2298L121.529 56.5467H160.632H161.576V55.6021V44.2599V43.3186H160.632H128.65L132.741 35.7217H160.635H161.579V34.7804V23.4382V22.4936H160.635H139.862L145.495 12.0295L145.937 11.2079L145.123 10.7556L134.07 4.63543L133.233 4.1731Z" fill="white"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="15.5743" y1="45.2044" x2="476.392" y2="40.0439" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F7941D"/>
+                                <stop offset="1" stop-color="#EF4136"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                
+                    <h4 class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero, mattis et cursus lectus nunc a ut. Condimentum viverra lacus ut volutpat cursus. Tortor, viverra adipiscing ipsum viverra. Iaculis blandit leo enim sociis aenean ullamcorper quam nam mauris.</h4>
+
+                </div>
+                
+                    
+                
+                <div  class="col-lg-6 col-12 d-flex justify-content-lg-center">
+                    <img src="./img/arms-woman.png" height="600px">
+                </div>
 
             </div>
-            
-                
-            
-           
-            <img src="./img/arms-woman.png" height="600px">
-
         </div>
     </div>
-
+<!--
     <div id="background-header" class="container">
         <svg width="1420" style="z-index: -4; position:absolute" viewBox="0 0 1920 1497" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect x="-266.681" y="0.536621" width="2351.93" height="1495.65" fill="url(#pattern0)"/>
@@ -229,7 +247,7 @@
         </div>
     </div>
 
-    <div id="backgroundblack" class="bg-dark position-absolute w-100 h-100 invisible" style="transition: 0.32s"></div>
+    <div id="backgroundblack" class="position-fixed w-100 h-100 invisible" style="transition: 0.32s; background-color: rgba(0,0,0,0.5); top: 0; left:0;" onclick="document.getElementById('alternative-form').setAttribute('class', ' '); document.getElementById('backgroundblack').setAttribute('class', 'position-fixed w-100 h-100 invisible')"></div>
     <div id="fifth-header" class="container-fluid py-4">
 
         <div id="fifth-header-fav" class="container-fav">    
@@ -240,7 +258,7 @@
                 <h6 class="paragraph">Programa de 5 semanas de acompanhamento com<br> personal trainer e nutricionista para potencialisar<br> seus resultados </h6>
                 <h6 class="paragraph mb-5 mt-5">Saiba como aumentar em 3x seus resultados</h6>
 
-                <div id="fifth-header-button" onmouseover="document.getElementById('alternative-form').style.left = 0; document.getElementById('backgroundblack').visibility = 'visible'" onmouseout="document.getElementById('alternative-form').style.left = '-415px'; document.getElementById('backgroundblack').visibility = 'hidden'">Preciso disso</div>
+                <div id="fifth-header-button" onclick="document.getElementById('alternative-form').setAttribute('class', 'onform'); document.getElementById('backgroundblack').setAttribute('class', 'position-fixed w-100 h-100 visible')">Preciso disso</div>
             </div>
 
 
@@ -252,7 +270,7 @@
 
     </div>
 
-     <div class="form header-form" id='alternative-form'>
+     <div class="form" id='alternative-form'>
                         
                 <h2 class="subtitle">Deixe seu contato</h2>
                 <p class="paragraph">Venha sentir a nossa vibe</p>
@@ -261,17 +279,17 @@
                 <form>
                     <div class="form-component">
                     <label class="description">Nome completo do Títular</label>
-                    <input type="text"><i class="fas fa-user-friends iconlabel"></i></input>
+                    <input type="text"><i class="fas fa-user-friends alternative-iconlabel"></i></input>
                     </div>
 
                     <div class="form-component">
                         <label class="description">Email do Titular</label>
-                        <input type="text"><i class="far fa-envelope iconlabel"></i></input>
+                        <input type="text"><i class="far fa-envelope alternative-iconlabel"></i></input>
                     </div>
 
                     <div class="form-component">
                         <label class="description">Telefone do Titular</label>
-                        <input type="text"><i class="fas fa-mobile-alt iconlabel" style="left: 72.5px"></i></input>
+                        <input type="text"><i class="fas fa-mobile-alt alternative-iconlabel" style="left: 60.5px"></i></input>
                     </div>
 
                     <button>Quero ser Fit</button>
@@ -309,10 +327,7 @@
             <h1 class="title">Conheça nossos planos</h1>
         </div>
 
-    </div>
-
-        
-</body>
+    </div> -->
 
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
@@ -320,5 +335,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js "></script>
     <script src="js/jquery-ui.js"></script>
 
+</body>
 
 </html>
