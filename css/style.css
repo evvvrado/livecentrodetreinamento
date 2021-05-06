@@ -600,14 +600,19 @@ progress {
   background-color: var(--principal);
 }
 
+#alternative-form{
+  position: fixed;
+  top:35px;
+  left: -500px;
+
+  transition: 0.32s;
+  margin: 0 auto;
+
+  z-index: 9999;
+}
 
 .header-text{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: -105px;
-  
-  margin-left: 35px;
+  margin: 85px -15px;
   
 }
 
@@ -654,7 +659,7 @@ progress {
   margin-bottom: 30px;
 }
 
-#third-header{
+#third-header, #fourth-header, #sixth-header{
   margin-top: 150px;
   text-align: center;
 }
@@ -664,8 +669,106 @@ progress {
   margin-bottom: 35px;
 }
 
-#third-header .paragraph{
+#third-header-img{
+  margin-top: 50px;
   
+}
+#fourth-header .title{
+  color: var(--principal);
+  margin-bottom: 35px;
+
+}
+
+#gallery{
+  margin-top: 20px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+#gallery .gallery-pic{
+
+  width: 250px;
+  height: 240px;
+  margin: 10px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  overflow: hidden;
+
+  /* background-color: blue; */
+}
+
+#gallery #gallery-text{
+  margin-top: 20px;
+  width:100%;
+}
+
+#gallery a{
+
+  text-decoration: none;
+  cursor: pointer;  
+
+}
+
+#fifth-header{  
+  margin-top: 250px;
+}
+
+#fifth-header-fav{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+}
+#fifth-header .title{
+  margin-bottom: 25px; 
+
+}
+#fifth-header-img{
+  margin-top: -250px;
+  margin-right: -150px;
+}
+
+#fifth-header-button{
+  background-color: #F5600F;
+  border-radius: 4px;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  padding: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+#modalidades{
+  height: 175px;
+  width: 100vw;
+
+  margin-top: 55px;
+  margin-left: -15px;
+  background-color: #1E2029;
+
+
+}
+#seventh-header{
+  margin-top: -23px;
+
+  background-image: url('../img/spam-laranja.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  text-align: center;
+
+  height: 750px;
+}
+
+#seventh-header-fav{
+  margin-top: 20px;
 }
 
 @media (min-width: 1130px){
