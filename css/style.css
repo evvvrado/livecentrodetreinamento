@@ -734,7 +734,7 @@ progress {
   margin-bottom: 30px;
 }
 
-#third-header, #fourth-header, #sixth-header{
+#third-header, #fourth-header, #sixth-header, #eigth-header{
   margin-top: 150px;
   text-align: center;
 }
@@ -743,15 +743,22 @@ progress {
   color: var(--principal);
   margin-bottom: 35px;
 }
+#ninth-header .title{
+  color: var(--principal);
+  margin-bottom: 35px;
 
-#third-header-img{
-  margin-top: 50px;
-  
 }
+
 #fourth-header .title{
   color: var(--principal);
   margin-bottom: 35px;
 
+}
+
+
+#third-header-img{
+  margin-top: 50px;
+  
 }
 
 #gallery{
@@ -820,19 +827,24 @@ progress {
   padding-right: 45px;
 }
 
-#sixth-header{
-  
-  background-color: #1E2029;
+#eigth-header-button{  
+  background-color: #F5600F;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  padding: 15px;
 }
 
 #modalidades{
   height: auto;
 
-  margin-top: 55px;
   padding: 54px;
+}
 
-
-
+.modalidade{
+  margin-bottom: 55px;
 }
 #seventh-header{
   margin-top: -23px;
@@ -840,14 +852,15 @@ progress {
   background-image: url('../img/spam-laranja.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto 100%;
 
   text-align: center;
 
-  height: 900px;
+  height: auto;
 }
 
 #seventh-header-fav{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #seventh-header .title{
@@ -855,18 +868,19 @@ progress {
   margin-bottom: 35px;
 }
 #planos{
-  margin-top: 50px;
+  margin-top: 30px;
+  margin: 35px;
 }
 .planos-elements{
   background-color: var(--background2) ;
   
   padding: 30px;
-  margin:5px;
-  max-width: 300px;
+  margin:10px;
+  /* max-width: 300px; */
   border-radius: 8px;
 }
 
-.planos-elements .text5{
+.text5{
   font-size: 10px;
   font-family: var(--fonte2);
   color: var(--descricao);
@@ -901,6 +915,68 @@ progress {
 
   margin-top: 25px;
   margin-bottom: 45px;
+
+  transition: 1s;
+}
+
+.planos-elements .button:hover{
+  cursor: pointer;
+  color: white;  
+  box-shadow: inset 0 -100px 0 0 #EF4136;
+
+    
+}
+
+.list-component{
+  background: var(--background2);
+  padding: 20px;
+
+  max-width: calc(100vw -20px);
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--fonte2);
+  font-weight: bold;
+  font-size: 13px;
+  color: #5B647B;
+
+
+
+  align-items: center;
+
+  
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.list-component img{
+  margin-right: 15px;
+}
+
+#eigth-header-items{
+  margin-top: -55px;
+}
+#eigth-header-description{
+  margin: 120px;margin-top: 5px;
+}
+
+.ninth-items{
+  background: var(--background3);
+
+  font-size: 14px;
+  font-family: var(--fonte2);
+  text-align: left;
+
+  margin-top: 15px;
+  padding: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 8px;
+
 }
 
 @media (min-width: 1130px){
@@ -917,6 +993,7 @@ progress {
   #fifth-header-img{
     display:none;
   }
+
 }
 
 
@@ -936,8 +1013,24 @@ progress {
   }
   .header-form{
     width:100%;
-    margin-top: 200px;  
+    margin-top: 50px;  
+  }
+  
+  #fifth-header-button{
+    width: auto;
+  } 
+  #eigth-header-button{
+    width: auto;
+  }
+  #eigth-header-items{
+    margin: auto;
+    margin-top: 0px;
+  }
+  #eigth-header-description{
+    margin: auto;
   }
 
-
+  .list-component{
+    width: 100%;
+  }
 }

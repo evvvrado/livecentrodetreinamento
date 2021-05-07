@@ -41,9 +41,9 @@
                 <ul>
 
                     <li class="col"><a href="#">Home</a></li>
-                    <li class="col"><a href="#">Quem Somos</a></li>
-                    <li class="col"><a href="#">Planos</a></li>
-                    <li class="col"><a href="#">Modalidades</a></li>
+                    <li class="col"><a href="#second-header">Quem Somos</a></li>
+                    <li class="col"><a href="#seventh-header">Planos</a></li>
+                    <li class="col"><a href="#sixth-header">Modalidades</a></li>
                     <li class="col"><a href="#">Blog</a></li>
                     <li class="col"><a href="#"><i class="far fa-user-circle"></i>  Área do Cliente</a></li>
 
@@ -56,7 +56,7 @@
             <div class="row flex-lg-row-reverse"">
 
 
-                <div class="col-lg-6 col-12 d-flex justify-content-lg-end">
+                <div class="col-lg-6 col-12 d-flex justify-content-lg-end  justify-content-center">
                     <div class="header-text">
                         <h1 class="title">Busque um<br>Resultado</h1>
                         <p class="paragraph">Temos diversos planos para você<br>não deixar de exercitar seu corpo</p>
@@ -122,7 +122,7 @@
     
    
          
-    <div id="second-header" class="container-fluid py-4 overflow-hidden">
+    <div id="second-header" class="container-fluid py-4 overflow-hidden" >
         
         <div id="second-header-fav" class="container-fav d-flex">
 
@@ -174,9 +174,9 @@
                     <h6 class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Libero, mattis et cursus lectus nunc a ut.</h6>
                 </div>
 
-                <div class="col-12 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center ">
                     <div id="third-header-img">
-                        <img src="img/video.png"  style="max-width: 900px; width: calc(100vw - 250px);">
+                        <img src="img/video.png"  style="max-width: 900px; width: calc(100vw - 15%);">
                     </div>
                 </div>
         
@@ -224,25 +224,25 @@
         </div>
     </div>
 
-    <div id="backgroundblack" class="position-fixed w-100 h-100 invisible" style="transition: 0.32s; background-color: rgba(0,0,0,0.5); top: 0; left:0;" onclick="document.getElementById('alternative-form').setAttribute('class', ' '); document.getElementById('backgroundblack').setAttribute('class', 'position-fixed w-100 h-100 invisible')"></div>
+    <div id="backgroundblack" class="position-fixed w-100 h-100 invisible" style="z-index: 9999; transition: 0.32s; background-color: rgba(0,0,0,0.5); top: 0; left:0;" onclick="document.getElementById('alternative-form').setAttribute('class', ' '); document.getElementById('backgroundblack').setAttribute('class', 'position-fixed w-100 h-100 invisible')"></div>
     
 
 
-    <div id="fifth-header" class="container-fluid py-4  overflow-hidden">
+    <div id="fifth-header" class="container-fluid py-4">
 
-        <div id="fifth-header-fav" class="container-fav ">    
+        <div id="fifth-header-fav" class="container-fav  justify-content-lg-end  justify-content-center text-lg-left text-center">    
             <div class="row">
                 <div id="fifth-header-text" class="col-12 col-lg-6">
 
                     <h6 class="description">Acelerador</h6>
                     <h1 class="title">Acelerador de Resultados<br> em 5 Semenas: Nutrição<br> + Personal Trainer</h1>
-                    <h6 class="paragraph">Programa de 5 semanas de acompanhamento com<br> personal trainer e nutricionista para potencialisar<br> seus resultados </h6>
+                    <h6 class="parag    raph">Programa de 5 semanas de acompanhamento com<br> personal trainer e nutricionista para potencialisar<br> seus resultados </h6>
                     <h6 class="paragraph mb-5 mt-5">Saiba como aumentar em 3x seus resultados</h6>
 
                     <div id="fifth-header-button" onclick="document.getElementById('alternative-form').setAttribute('class', 'onform'); document.getElementById('backgroundblack').setAttribute('class', 'position-fixed w-100 h-100 visible')">Preciso disso</div>
                 </div>
             
-                 <div id="fifth-header-img" class="col-6 d-flex justify-content-lg-center">
+                 <div id="fifth-header-img" class="col-6 d-flex justify-content-lg-center"  style="overflow-x: hidden;">
                     <img src="img/arms-man.png"  width="750px" class="d-none d-lg-block">
                  </div>
             </div>
@@ -283,26 +283,27 @@
 
     </div>
 
-
-    <div id="sixth-header" class="container-fluid py-4">
-
-        <div id="sixth-header-fav" class="container-fav" >
-
-            <div class="row justify-content-center">
+    <div id="sixth-header" class="container-fluid py-4" >
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
                 <div id="sixth-header-text">
                     <h1 class="title">Modalidades Coletivas</h1>
                     <h6 class="paragraph">Temos diversas modalidades e certamente uma ou<br> mais é feita para você!</h6>
                 </div>
-             </div>
+            </div>
+         </div>
+    </div>
 
 
-        <div id="modalidades" class="row justify-content-center align-content-center">
-            <div id="modalidade1" class="modalidade col-lg col-12"><img src="./img/modalidade (1).png"></div>
-            <div id="modalidade2" class="modalidade col-lg col-12"><img src="./img/modalidade (2).png"></div>
-            <div id="modalidade3" class="modalidade col-lg col-12"><img src="./img/modalidade (3).png"></div>
-            <div id="modalidade4" class="modalidade col-lg col-12"><img src="./img/modalidade (4).png"></div>
-            <div id="modalidade5" class="modalidade col-lg col-12"><img src="./img/modalidade (5).png"></div>
-        </div>
+    <div  class="container-fluid py-4 text-center" style="background: var(--background2);">
+        <div id="sixth-header-fav" class="container-fav" >
+            <div id="modalidades" class="row justify-content-center align-content-center">
+                <div id="modalidade1" class="modalidade col-lg col-12"><img src="./img/modalidade (1).png"></div>
+                <div id="modalidade2" class="modalidade col-lg col-12"><img src="./img/modalidade (2).png"></div>
+                <div id="modalidade3" class="modalidade col-lg col-12"><img src="./img/modalidade (3).png"></div>
+                <div id="modalidade4" class="modalidade col-lg col-12"><img src="./img/modalidade (4).png"></div>
+                <div id="modalidade5" class="modalidade col-lg col-12"><img src="./img/modalidade (5).png"></div>
+            </div>
 
         </div>
     </div>
@@ -315,7 +316,7 @@
             </div>
             <div id="planos" class="row d-flex align-content-center justify-content-center">
 
-                <div class="container col align-content-center planos-elements"  style="max-height: 570px;">
+                <div class="container col-lg col-12 col-md-12 align-content-center planos-elements"  style="max-height: 570px;">
                     <h3 class="title">Mensal</h3>
                     <h6 class="text6">Indicado pra quem já cansou de não ter resultados. Novos hábitos e uma rotina de treinamentos que cabe na sua agenda!</h6>
                     <hr>
@@ -341,7 +342,7 @@
                     </div>
                 </div>
 
-                <div class="container col align-content-center planos-elements">
+                <div class="container col-lg col-12 col-md-12 align-content-center planos-elements">
                     <h3 class="title">Anual</h3>
                     <h6 class="text6">Indicado pra quem já cansou de não ter resultados. Novos hábitos e uma rotina de treinamentos que cabe na sua agenda!</h6>
                     <hr>
@@ -369,7 +370,7 @@
                     </div>
                 </div>
 
-                <div class="container col align-content-center planos-elements"  style="max-height: 570px;">
+                <div class="container col-lg col-12 col-md-12 align-content-center planos-elements"  style="max-height: 570px;">
                     <h3 class="title" style="font-size: 15px; margin-bottom: 25px;">Desafio nutrição<br>+ personal trainer</h3>
                     <h6 class="text6">Nosso time de especialistas te desafia a subir ao próximo nível em 5 semanas. Totalmente personalizado e seguro para iniciantes, avançados e futuros atletas.</h6>
                     <hr>
@@ -397,13 +398,109 @@
             </div>
 
         </div>
+    </div>
 
+    <div id="eigth-header" class="container-fluid py-4">
+        <div id="eight-header-fav" class="container-fav">
+            <div class="row justify-content-center align-content-center">        
+                <div id="eight-header-text">       
+                    <h1 class="title">Quer uma novidade?</h1>
+                    <h6 class="paragraph">Preparamos uma novidade surpriendente para você</h6>
+                </div> 
+            </div>
+
+            <div class="row justify-content-center align-content-center d-lg-block d-none mt-5">
+                    <img src="./img/exercising-woman.png" style="width: calc(100vw - 45%)">
+            </div>
+
+            <div id="eigth-header-description" class="row text-center text-md-left align-content-center">
+                <div class="col-md-6 col mb-5">
+                    
+                    <h1 class="title mt-5">É resultado que<br>você busca?</h1>
+                    <h6 class="paragraph mt-5">Nós desafiamos você a testar nosso método por 7 dias, para você viver a experiência de treinar com a Live totalmente gratuito.</h6>
+
+                    <div class="text5  mt-5" style="font-size: 13px;">Clique no botão abaixo e fale com<br>nossa equipe para saber todos os detalhes.</div>
+
+                    <div id="eigth-header-button"  class="w-md-100" onclick="document.getElementById('alternative-form').setAttribute('class', 'onform'); document.getElementById('backgroundblack').setAttribute('class', 'position-fixed w-100 h-100 visible')">Quero saber mais</div>
+                </div>
+                
+            
+
+                <div id="eigth-header-items" class="col-md-6 col d-flex flex-column align-items-start">
+                    <ul>
+                        <li class="list-component row flex-nowrap"><img src="./img/group-icon (1).png" height="55px"> Orientação nutricional</li>
+                        <li class="list-component row flex-nowrap"><img src="./img/group-icon (2).png" height="55px"> Tirar dúvidas sobre alimentos e nutrição.</li>
+                        <li class="list-component row flex-nowrap"><img src="./img/group-icon (3).png" height="55px"> Estimular a qualidade de vida.</li>
+                        <li class="list-component row flex-nowrap"><img src="./img/group-icon (4).png" height="55px"> Incentivar a mudança no comportamento do usuário.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="ninth-header" class="container-fluid py-4 text-center">
+        <div id="ninth-header-fav" class="container-fav">
+                    <h1 class="title">Ainda com Dúvidas</h1>
+                    <h6 class="paragraph">Selecionamos as principais dúvidas querecebemos todos os dias. Se você não <br>
+                    encontrar a resposta para a sua, entre em contato conosco.</h6>
+
+        <div class="row mt-5">
+            <div class="col-6">
+                <div class="ninth-items">Posso fazer todas as modalidades sem custo adicional?
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                        <path d="M13.5693 1.54834L7.78087 7.3368L1.99241 1.54834" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <div class="ninth-items">O médico orientou meu pai de 65 anos a fazer, tem um treinamento adequado pra idade dele?   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                        <path d="M13.5693 1.54834L7.78087 7.3368L1.99241 1.54834" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <div class="ninth-items">Nunca fiz academia, terei acompanhamento no começo?   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                        <path d="M13.5693 1.54834L7.78087 7.3368L1.99241 1.54834" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="col-6">
+                <div class="ninth-items">Posso frequentar a academia todos os dias?   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                        <path d="M13.5693 1.54834L7.78087 7.3368L1.99241 1.54834" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <div class="ninth-items">O personal vai me acompanhar para que eu tenha<br> resultados?   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                        <path d="M13.5693 1.54834L7.78087 7.3368L1.99241 1.54834" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <div class="ninth-items">Nunca fiz academia, terei acompanhamento no começo?   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                        <path d="M13.5693 1.54834L7.78087 7.3368L1.99241 1.54834" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+            </div>
+            
+        </div>
+            
+        </div>
+
+    </div>
  
 
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js "></script>
+    <script src="js/main.js"></script>
     <script src="js/jquery-ui.js"></script>
 
 </body>
