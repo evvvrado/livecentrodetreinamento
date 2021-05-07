@@ -820,12 +820,17 @@ progress {
   padding-right: 45px;
 }
 
+#sixth-header{
+  
+  background-color: #1E2029;
+}
+
 #modalidades{
-  height: 175px;
+  height: auto;
 
   margin-top: 55px;
+  padding: 54px;
 
-  background-color: #1E2029;
 
 
 }
@@ -834,16 +839,68 @@ progress {
 
   background-image: url('../img/spam-laranja.png');
   background-repeat: no-repeat;
-  background-size: 100%;
   background-position: center;
 
   text-align: center;
 
-  height: 750px;
+  height: 900px;
 }
 
 #seventh-header-fav{
   margin-top: 20px;
+}
+
+#seventh-header .title{
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+#planos{
+  margin-top: 50px;
+}
+.planos-elements{
+  background-color: var(--background2) ;
+  
+  padding: 30px;
+  margin:5px;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.planos-elements .text5{
+  font-size: 10px;
+  font-family: var(--fonte2);
+  color: var(--descricao);
+}
+.planos-elements .text6{
+  font-size: 13px;
+  font-family: var(--fonte2);
+  color: var(--descricao);
+}
+.planos-elements .text1{
+  font-size: 14px;
+  font-family: var(--fonte2);
+  color: var(--fontcolor);
+}
+.planos-elements .text2{
+  font-size: 55px;
+  font-family: var(--fonte1);
+  color: var(--principal);
+}
+.planos-elements p{
+  font-size: 35px;
+  font-family: var(--fonte1);
+  color: var(--principal);
+}
+
+.planos-elements .button{
+  color: var(--principal);
+  padding: 10px;
+  font-family: var(--fonte2);
+  border: solid 1px var(--principal);
+  border-radius: 5px;
+
+  margin-top: 25px;
+  margin-bottom: 45px;
 }
 
 @media (min-width: 1130px){
@@ -857,6 +914,9 @@ progress {
     background-position: top center;
   }
 
+  #fifth-header-img{
+    display:none;
+  }
 }
 
 
