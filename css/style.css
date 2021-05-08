@@ -701,25 +701,31 @@ progress {
   color: white;
 }
 
-.foater-bar{
-  border-bottom: 96px solid white;
-  border-left: 55px solid transparent;
-  border-right: 55px solid transparent;
-  height: 0;
-  width: 1200px;
+#foater-bar{
+  /* border-bottom: 65px solid white;
+  border-left: 65px solid transparent;
+  border-right: 65px solid transparent; */
 
+  background-color: white;
+  height: 65px;
+
+  transform: perspective(10px) rotateX(1deg);
   position: fixed;
-  left: calc(50% - 600px);
+  width: 60%;
+  font-size: 18px!important;
   bottom: 0;
 
     
   color: var(--principal);
-  font-size: 32px;
 
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  
+  padding-left: 35px;
+  padding-right: 35px;
 
   cursor: pointer;
+  z-index: 9999;
 }
 
 .foater-bar-names{
@@ -734,7 +740,7 @@ progress {
   margin-bottom: 30px;
 }
 
-#third-header, #fourth-header, #sixth-header, #eigth-header{
+#third-header, #fourth-header, #sixth-header, #eigth-header, #tenth-header{
   margin-top: 150px;
   text-align: center;
 }
@@ -852,7 +858,7 @@ progress {
   background-image: url('../img/spam-laranja.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 100%;
+  background-size: auto 150%;
 
   text-align: center;
 
@@ -865,7 +871,7 @@ progress {
 
 #seventh-header .title{
   font-size: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 #planos{
   margin-top: 30px;
@@ -878,6 +884,7 @@ progress {
   margin:10px;
   /* max-width: 300px; */
   border-radius: 8px;
+  box-shadow: -0.845915px 5.9214px 31.2988px 10.151px rgba(0, 0, 0, 0.05);
 }
 
 .text5{
@@ -939,7 +946,7 @@ progress {
   font-size: 13px;
   color: #5B647B;
 
-
+  box-shadow: 5px 5px 58px rgba(0, 0, 0, 0.5);
 
   align-items: center;
 
@@ -977,6 +984,112 @@ progress {
 
   border-radius: 8px;
 
+}
+
+#tenth-header-button{
+  color: white;
+  font-family: var(--fonte2);
+  font-weight: bold;
+  font-size: 12px;
+  border: solid 0.5px white;
+  border-radius: 5px;
+
+  display: flex;
+  padding: 10px;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: 1s;
+}
+
+#tenth-header-button:hover{
+  
+  color: var(--background);  
+  box-shadow: inset 0 -100px 0 0 white;
+
+}
+
+.blog-posts{
+  background-color: var(--background3);
+  text-align: left;
+  padding: 0;
+  width: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+}
+
+#post-date{
+  color: var(--descricao);
+  font-size: 13px;
+  margin-top: 35px;
+  margin-left: 45px;
+  font-family: var(--fonte2);
+}
+
+#post-title{
+  font-size: 18px;
+  margin-left: 45px;
+  margin-top: 15px;
+
+}
+
+#post-more{
+  color: var(--principal);
+  font-size: 12px;
+  border: solid 0.5px var(--principal);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 140px;
+
+  margin-left: 45px;
+  margin-top: 45px;
+  margin-bottom: 25px;
+
+  transition: 1s;
+}
+
+#post-more:hover{
+  
+  cursor: pointer;
+  color: white;  
+  box-shadow: inset 0 -100px 0 0 #EF4136;
+
+}
+
+#footer{
+  font-family: var(--fonte2);
+  font-size: 13px;
+  background-color: var(--principal);
+  margin-top: 25px;
+}
+
+#footer ul{ 
+  list-style: none;
+  padding: 0;
+}
+
+#footer ul li{
+  line-height: 65px;
+  padding: 25px;
+  display: inline;
+}
+#footer ul li a{
+  color: var(--fontcolor)!important;
+  text-decoration: none;
+  font-size: 13px;
+  transition: ease-in-out 0.32s ;
+}
+#footer ul li a:hover{
+  border-bottom: solid 1px var(--principal);
 }
 
 @media (min-width: 1130px){
