@@ -706,10 +706,8 @@ progress {
   border-left: 65px solid transparent;
   border-right: 65px solid transparent; */
 
-  background-color: white;
   height: 65px;
 
-  transform: perspective(10px) rotateX(1deg);
   position: fixed;
   width: 60%;
   font-size: 18px!important;
@@ -725,9 +723,19 @@ progress {
   padding-right: 35px;
 
   cursor: pointer;
-  z-index: 9999;
+  z-index: 9998;
 }
-
+#foaterbar-background{
+  
+  background-color: white;
+  height: 65px;
+  z-index: 9998;
+  transform: perspective(10px) rotateX(1deg);
+  position: fixed;
+  width: 60%;
+  font-size: 18px!important;
+  bottom: 0;
+}
 .foater-bar-names{
   font-size: 18px;
 }
@@ -1090,6 +1098,52 @@ progress {
 }
 #footer ul li a:hover{
   border-bottom: solid 1px var(--principal);
+}
+
+#info-header{
+  position: fixed;
+  bottom: -100vw;
+  width: 100%;
+  height: 400px;
+  /* background-color: white; */
+  color: #4B5368;
+  font-size: 14px;
+  transition: 0.32s;
+
+
+  z-index: 9999;
+}
+
+#info-header-fav{
+  font-family: var(--fonte2);
+  background-color: white;
+  padding-top: 75px;
+  height: 100%;
+  padding: 55px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+   clip-path: 
+    polygon(
+      0% 16%,     /* top left */
+      5% 0%,     /* top left */
+      95% 0%,    /* top right */
+      100% 16%,   /* top right */
+      100% 0%,  /* bottom right */
+      100% 0%,  /* bottom right */
+      100% 100%,   /* bottom left */
+      0% 100%      /* bottom left */
+    );
+
+}
+
+.info-header-button{
+  color: white;
+  font-family: var(--fonte);
+  background: var(--principal);
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 25px;
 }
 
 @media (min-width: 1130px){
