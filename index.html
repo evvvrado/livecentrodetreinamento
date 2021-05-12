@@ -26,8 +26,14 @@
 
 <body id="home">
 
-    <!-- <img src="img/header.png" class="back-header"> -->
+    <div id="gradient"></div>
+
+
+
+
     <div id="header" class="container-fluid py-4">
+
+
         <div id="container-fav" class="container-fav">
 
 
@@ -36,9 +42,27 @@
                 <div class="col">
                     <a href="/"><img id="logo" src="img/logo.png"></a>
                 </div>  
+
+                <div class="col d-flex justify-content-end d-lg-none mr-5 align-items-center" style="font-size: 35px;" id="hamburguer">
+                    <i class="fas fa-bars" onclick=" document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-flex visible');"></i>
+                </div> 
                 
+                <div class="container-fluid justify-content-center w-100 mr-0 d-none invisible" id="mobilebarcontainer">
+                    
+                    <ul id="mobilebar" class="row flex-column justify-content-center position-absolute ">
+                        
+                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#">Home</a></li>
+                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#second-header">Quem Somos</a></li>
+                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#seventh-header">Planos</a></li>
+                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#sixth-header">Modalidades</a></li>
+                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#tenth-header">Blog</a></li>
+                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#"><i class="far fa-user-circle"></i>  Área do Cliente</a></li>
+                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><i class="fas fa-times" id="closemobilebar" onclick="hiddehamburguer()"></i></li>
+                    </ul>   
+                    
+                </div>
                 
-                <ul>
+                <ul id="desktopbar">
 
                     <li class="col"><a href="#">Home</a></li>
                     <li class="col"><a href="#second-header">Quem Somos</a></li>
@@ -48,12 +72,15 @@
                     <li class="col"><a href="#"><i class="far fa-user-circle"></i>  Área do Cliente</a></li>
 
                 </ul>   
+
+
                 
                    
             </div>
-                
+            
             <!-- FORMUlÁRIO PRINCIPAL-->
             <div class="row flex-lg-row-reverse"">
+            <!-- <div class="col-12"> <img src="img/header.png" class="back-header d-block d-lg-none"></div> -->
 
 
                 <div class="col-lg-6 col-12 d-flex justify-content-lg-end  justify-content-center">
@@ -108,7 +135,7 @@
       
     <div class="container-fluid" id="info-header">
         <div class="container-fav" id="info-header-fav">
-            <div class="row pb-3 "><div class="col d-flex justify-content-between" style="font-family: var(--fonte); color: var(--principal)">Unidade Centro <span style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;'>Ver mapa <i class="fas fa-arrow-right  ml-2"></i></span></div> <div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"><i class="fas fa-angle-down" onclick="document.getElementById('info-header').style.bottom = '-100vh'" style=" color: var(--principal); cursor:pointer;"></i></div> <div class="col d-flex justify-content-between" style="font-family: var(--fonte);  color: var(--principal)">Árvore Grande <span style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;'>Ver mapa <i class="fas fa-arrow-right ml-2"></i></span></div></div>
+            <div class="row pb-3 "><div class="col d-flex justify-content-between" style="font-family: var(--fonte); color: var(--principal)">Unidade Centro <span style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;'>Ver mapa <i class="fas fa-arrow-right  ml-2"></i></span></div> <div class="col d-flex align-items-center justify-content-center" style="font-size: 25px; margin-top: -45px;"><i class="fas fa-angle-down" onclick="document.getElementById('info-header').style.bottom = '-100vh'" style=" color: var(--principal); cursor:pointer;"></i></div> <div class="col d-flex justify-content-between" style="font-family: var(--fonte);  color: var(--principal)">Árvore Grande <span style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;'>Ver mapa <i class="fas fa-arrow-right ml-2"></i></span></div></div>
             <div class="row pb-3 "><div class="col"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div><div class="col"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div></div>
             <div class="row pb-3 "><div class="col"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div><div class="col"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div></div>
             <div class="row pb-3 "><div class="col"><i class="mr-3 fas fa-map-marker-alt" style=" color: #4B5368"></i> 35 9 8825 6595</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div>   <div class="col"><i class="mr-3 fas fa-map-marker-alt" style=" color: #4B5368"></i> 35 9 8825 6595</div></div>
