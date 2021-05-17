@@ -68,6 +68,10 @@
   }
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: var(--fonte);
@@ -492,6 +496,17 @@ progress {
   /* font-size: calc(20px + 1vw); */
   font-size: 30px;
 }
+.showin{
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(50px);
+}
+
+
+.anime-start {
+	opacity: 1;
+  transform: translateY(0);
+}
 
 #header{ 
   background-image: url(../img/header.png);
@@ -501,7 +516,7 @@ progress {
 
 .back-header{
   position: absolute;
-  width: 100%;
+  height: 600px;
 }
 
 #topbar{
@@ -740,7 +755,9 @@ progress {
   background-color: white;
   height: 65px;
   z-index: 9998;
-  transform: perspective(10px) rotateX(1deg);
+  /* transform: perspective(10px) rotateX(1deg); */
+  clip-path: polygon(6% 0, 94% 0, 100% 100%, 0% 100%);
+
   position: fixed;
   width: 60%;
   font-size: 18px!important;
@@ -1124,7 +1141,7 @@ progress {
 
 #info-header{
   position: fixed;
-  bottom: -100vw;
+  bottom: -100vh;
   width: 100%;
   height: 400px;
   /* background-color: white; */
@@ -1197,6 +1214,7 @@ progress {
 #mobilebar{
   background-color: var(--background2);
   width: 100%;
+  height: 100%;
   z-index: 9999;
   list-style: none;
   padding: 0;
@@ -1265,4 +1283,18 @@ progress {
   .list-component{
     width: 100%;
   }
+}
+
+
+
+@keyframes line2{
+	0%{
+		transform: translateY(0px);
+	}
+	50%{
+		transform: translateY(50px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
 }
