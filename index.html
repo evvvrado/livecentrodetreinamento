@@ -25,7 +25,20 @@
 </head>
 
 <body id="home">
-
+     <div class="container-fluid justify-content-center w-100 mr-0" id="mobilebarcontainer">
+                    
+                    <ul id="mobilebar" class="container-fav flex-column justify-content-center">
+                        
+                        <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#">Home</a></li>
+                        <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#second-header">Quem Somos</a></li>
+                        <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#seventh-header">Planos</a></li>
+                        <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#sixth-header">Modalidades</a></li>
+                        <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#tenth-header">Blog</a></li>
+                        <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#"><i class="far fa-user-circle"></i>  Área do Cliente</a></li>
+                        <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><i class="fas fa-times" id="closemobilebar"></i></li>
+                    </ul>   
+                    
+                </div>
     <div id="gradient" class="d-none"></div>
     
     
@@ -46,23 +59,10 @@
                 </div>  
 
                 <div class="col d-flex justify-content-end d-lg-none align-items-center" style="font-size: 35px;" id="hamburguer">
-                    <i class="fas fa-bars" onclick=" document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-flex visible');"></i>
+                    <i class="fas fa-bars" onclick=" document.getElementById('mobilebarcontainer').style.top = '0'"></i>
                 </div> 
                 
-                <div class="container-fluid justify-content-center w-100 mr-0 d-none invisible" id="mobilebarcontainer">
-                    
-                    <ul id="mobilebar" class="row flex-column justify-content-center position-absolute ">
-                        
-                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#">Home</a></li>
-                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#second-header">Quem Somos</a></li>
-                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#seventh-header">Planos</a></li>
-                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#sixth-header">Modalidades</a></li>
-                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#tenth-header">Blog</a></li>
-                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><a href="#"><i class="far fa-user-circle"></i>  Área do Cliente</a></li>
-                        <li class="col d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').setAttribute('class', 'container-fluid justify-content-center w-100 mr-0 d-none invisible');"><i class="fas fa-times" id="closemobilebar" onclick="hiddehamburguer()"></i></li>
-                    </ul>   
-                    
-                </div>
+               
                 
                 <ul id="desktopbar">
 
@@ -114,6 +114,14 @@
                                 <label class="description">Telefone do Titular</label>
                                 <input type="text"><i class="fas fa-mobile-alt iconlabel" style="left: 72.5px"></i></input>
                             </div>
+
+                            <div class="form-component">
+                                <select id="unidades" class="mt-2">
+                                    <option value="06">Unidade Centro</option>
+                                    <option value="07">Unidade Árvore Grande</option>
+                                </select>
+                                <!-- <input type="text"><i class="fas fa-mobile-alt alternative-iconlabel" style="left: 72.5px"></i></input> -->
+                            </div>
         
                             <button>Quero ser Fit</button>
         
@@ -135,7 +143,7 @@
     </div>
       
     <div class="container-fluid" id="info-header">
-        <div class="container-fav" id="info-header-fav" style="width: 61.5%;">
+        <div class="container-fav" id="info-header-fav" style="width: 61.5%; margin:0 auto;">
             <div class="row pb-3 "><div class="col d-flex justify-content-between" style="font-family: var(--fonte); color: var(--principal)">Unidade Centro <span style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;'>Ver mapa <i class="fas fa-arrow-right  ml-2"></i></span></div> <div class="col d-flex align-items-center justify-content-center" style="font-size: 25px; margin-top: -45px;"><i class="fas fa-angle-down" onclick="document.getElementById('info-header').style.bottom = '-100vh'" style=" color: var(--principal); cursor:pointer;"></i></div> <div class="col d-flex justify-content-between" style="font-family: var(--fonte);  color: var(--principal)">Árvore Grande <span style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;'>Ver mapa <i class="fas fa-arrow-right ml-2"></i></span></div></div>
             <div class="row pb-3 "><div class="col"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div><div class="col"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div></div>
             <div class="row pb-3 "><div class="col"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div><div class="col"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div></div>
@@ -360,6 +368,7 @@
                         <input type="text"><i class="fas fa-mobile-alt alternative-iconlabel" style="left: 60.5px"></i></input>
                     </div>
 
+
                     <button>Quero ser Fit</button>
 
 
@@ -380,13 +389,13 @@
 
 
     <div  class="container-fluid py-4 text-center  showin carousel slide" style="background: var(--background2);">
-        <div id="sixth-header-fav" class="container-fav carousel-inner" >
+        <div id="sixth-header-fav" class="container-fav" >
             <div id="modalidades" class="row justify-content-center align-content-center">
-                <div id="modalidade1" class="carousel-item modalidade active"><img src="./img/modalidade (1).png"></div>
-                <div id="modalidade2" class="carousel-item modalidade"><img src="./img/modalidade (2).png"></div>
-                <div id="modalidade3" class="carousel-item modalidade"><img src="./img/modalidade (3).png"></div>
-                <div id="modalidade4" class="carousel-item modalidade"><img src="./img/modalidade (4).png"></div>
-                <div id="modalidade5" class="carousel-item modalidade"><img src="./img/modalidade (5).png"></div>
+                <div id="modalidade1" class="modalidade"><img src="./img/modalidade (1).png"></div>
+                <div id="modalidade2" class="modalidade"><img src="./img/modalidade (2).png"></div>
+                <div id="modalidade3" class="modalidade"><img src="./img/modalidade (3).png"></div>
+                <div id="modalidade4" class="modalidade"><img src="./img/modalidade (4).png"></div>
+                <div id="modalidade5" class="modalidade"><img src="./img/modalidade (5).png"></div>
             </div>
 
         </div>
@@ -401,7 +410,7 @@
             <div id="planos" class="row d-flex align-content-center justify-content-center">
 
                 
-                    <div class="container col-lg col-12 col-md-12 align-content-center planos-elements"  style="max-height: 600px;">
+                    <div class="container col-lg col-12 col-md-12 align-content-center planos-elements" id="previousplano"  style="max-height: 600px;">
                         <h3 class="title">Mensal</h3>
                         <h6 class="text6 mb-5">Indicado pra quem já cansou de não ter resultados. Novos hábitos e uma rotina de treinamentos que cabe na sua agenda!</h6>
                         <hr>
@@ -427,7 +436,7 @@
                         </div>
                     </div>
 
-                    <div class="container col-lg col-12 col-md-12 align-content-center planos-elements">
+                    <div class="container col-lg col-12 col-md-12 align-content-center planos-elements" id="activeplano">
                         <h3 class="title">Anual</h3>
                         <h6 class="text6">Indicado pra quem já cansou de não ter resultados. Novos hábitos e uma rotina de treinamentos que cabe na sua agenda!</h6>
                         <hr>
@@ -455,7 +464,7 @@
                         </div>
                     </div>
 
-                    <div class="container col-lg col-12 col-md-12 align-content-center planos-elements"  style="max-height: 600px;">
+                    <div class="container col-lg col-12 col-md-12 align-content-center planos-elements" id="nextplano"  style="max-height: 600px;">
                         <h3 class="title" style="font-size: 15px; margin-bottom: 15px;">Desafio nutrição<br>+ personal trainer</h3>
                         <h6 class="text6">Nosso time de especialistas te desafia a subir ao próximo nível em 5 semanas. Totalmente personalizado e seguro para iniciantes, avançados e futuros atletas.</h6>
                         <hr>
@@ -584,26 +593,26 @@
 
     </div>    
     
-    <div class="container-fluid py-4" id="tenth-header   showin">
-        <div class="container-fav" id="tenth-header-fav">
+    <div class="container-fluid py-4" id="tenth-header showin">
+        <div class="container-fav" id="tenth-header-fav" style="overflow-x: hidden;">
             <div class="row d-flex justify-content-between mb-3 align-items-center m-5 m-md-0" >
                 <p class="paragraph m-0">BLOG</p>
                 <div id="tenth-header-button" class="paragraph">ACESSAR BLOG</div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md d-flex flex-column blog-posts mr-4">
+            <div class="row justify-content-center flex-nowrap" id="blogslider">
+                <div class="col-md d-flex flex-column blog-posts mr-4" id="previousblog">
                     <img src="./img/blogpost1.png" width="100%">
                     <div id="post-date">22 Abril 2021</div>
                     <div id="post-title">Benefícios do hábito de treinar</div>
                     <div id="post-more">LEIA MAIS</div>
                 </div>
-                <div class="col-12 col-md d-flex flex-column blog-posts mr-4">
+                <div class="col-md d-flex flex-column blog-posts mr-4">
                     <img src="./img/blogpost2.png" width="100%">
                     <div id="post-date">22 Abril 2021</div>
                     <div id="post-title">Benefícios do hábito de treinar</div>
                     <div id="post-more">LEIA MAIS</div>
                 </div>
-                <div class="col-12 col-md d-flex flex-column blog-posts">
+                <div class="col-md d-flex flex-column blog-posts"  id="nextblog">
                     <img src="./img/blogpost3.png" width="100%">
                     <div id="post-date">22 Abril 2021</div>
                     <div id="post-title">Benefícios do hábito de treinar</div>

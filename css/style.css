@@ -605,6 +605,26 @@ progress {
   background-color: transparent;
 }
 
+.header-form select{
+  width: 100%;
+  height: 40px;
+  
+  padding-left: 5px;
+
+  outline-color: var(--background2);
+
+  color: var(--principal)!important;
+  font-family: var(--fonte2);
+  font-size: 12px;
+
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  background-color: transparent;
+}
+
+
 .header-form button{
   padding: 15px 20px;
   
@@ -619,6 +639,10 @@ progress {
 
   background-color: var(--principal);
 }
+.header-form option{
+  color: var(--background);
+  font-size: 15px;
+}
 
 
 .onform{
@@ -628,7 +652,7 @@ progress {
 #alternative-form{
   position: fixed;
   top:35px;
-  left: -100vw;
+  left: -200vw;
 
   transition: 0.32s;
   margin: 0 auto;
@@ -904,6 +928,7 @@ progress {
 
   text-align: center;
 
+  overflow-x: hidden;
   height: auto;
 }
 
@@ -919,6 +944,7 @@ progress {
   margin-top: 30px;
   margin: 35px;
 }
+
 .planos-elements{
   background-color: var(--background2) ;
   
@@ -1032,7 +1058,9 @@ progress {
   border-radius: 8px;
 
 }
-
+#tenth-header{
+  overflow-x: hidden;
+}
 #tenth-header-button{
   color: white;
   font-family: var(--fonte2);
@@ -1061,7 +1089,8 @@ progress {
   background-color: var(--background3);
   text-align: left;
   padding: 0;
-  width: 15px;
+  max-width: 500px;
+  max-height: 522px;
   margin-top: 15px;
   margin-bottom: 15px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1196,10 +1225,7 @@ progress {
     background-position: top center;
   }
 
-  #fifth-header-img{
-    display:none;
-  }
-
+  
 }
 
 #hamburguer{
@@ -1207,18 +1233,16 @@ progress {
   transition: linear 0.32s;
 }
 
-#hamburguer:focus{
+#hamburguer:hover{
   color: var(--principal);
 }
-#mobilebarcontainer{transition: 2s;}
+#mobilebarcontainer{transition: linear 0.32s; position: fixed;z-index: 999999; top:-200vh; right: 0; width: 100%; padding: 0;}
 #mobilebar{
   background-color: var(--background2);
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
+  height: 100vh;
   list-style: none;
   padding: 0;
-  top: 0;
+  transition: 0.32s;
 }
 #closemobilebar{transition: 1s; }
 #closemobilebar:hover{
@@ -1228,20 +1252,22 @@ progress {
 }
 
 
-#topbar  #mobilebar li{
+#mobilebar li{
   line-height: 65px;
   padding: 19px;
   display: inline;
 }
-#topbar  #mobilebar li a{
+#mobilebar li a{
   color: var(--fontcolor)!important;
   text-decoration: none;
   font-size: 13px;
   transition: ease-in-out 0.32s ;
 }
-#topbar  #mobilebar li a:hover{
+#mobilebar li a:hover{
   border-bottom: solid 1px var(--principal);
+  color: var(--principal);
 }
+
 
 
 @media (max-width: 991px){
@@ -1283,6 +1309,25 @@ progress {
   .list-component{
     width: 100%;
   }
+  
+
+  #previousplano{
+    position: absolute;
+    right: 93vw;
+  }
+  #nextplano{
+    position: absolute;
+    right: -96vw;
+  }
+  
+  #blogslider{
+    width: 1400px;
+  }
+
+  #modalidadeslider{
+    width: 1400px;
+  }
+
 }
 
 
