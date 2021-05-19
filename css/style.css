@@ -1327,6 +1327,10 @@ progress {
   #modalidadeslider{
     width: 1400px;
   }
+  
+  #tenth-header-fav{
+    overflow-x: scroll;
+  }
 
 }
 
