@@ -74,7 +74,7 @@ debounce = function(func, wait, immediate) {
 
 	$(document).scroll(debounce(function(){
 		animeScroll();
-	}, 200));
+	}, 100));
 })();
 
 
@@ -128,3 +128,6 @@ const iflSlider={
 		}
 	}
 }
+
+//SLIDE SCROLL POSITION
+document.querySelector('#galleryrow').scrollLeft = 240;

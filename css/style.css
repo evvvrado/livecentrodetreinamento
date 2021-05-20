@@ -771,7 +771,6 @@ progress {
   padding-left: 35px;
   padding-right: 35px;
 
-  cursor: pointer;
   z-index: 9998;
 }
 #foaterbar-background{
@@ -794,7 +793,9 @@ progress {
 #second-header-text{
   margin-top: 135px;
 }
-
+#second-header-fav svg{
+  height: 70px;
+}
 #second-header .title{
   margin-bottom: 30px;
 }
@@ -1244,6 +1245,19 @@ progress {
   padding: 0;
   transition: 0.32s;
 }
+
+#mobileinfocontainer{transition: linear 0.32s; position: fixed;z-index: 999999; bottom:-200vh; right: 0; padding: 0; background-color: white; transition: linear 0.32s;}
+#mobileinfo{
+  
+  font-family: var(--fonte2);
+  color: #4B5368;
+  height: 100vh;
+  list-style: none;
+  padding: 0;
+  transition: 0.32s;
+
+}
+
 #closemobilebar{transition: 1s; }
 #closemobilebar:hover{
   color: var(--principal);
@@ -1330,6 +1344,18 @@ progress {
   
   #tenth-header-fav{
     overflow-x: scroll;
+  }
+
+  #galleryrow{
+    overflow-x: scroll;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  
+  }
+
+  #second-header-fav svg{
+    width:100%;
+    height: auto;
   }
 
 }
