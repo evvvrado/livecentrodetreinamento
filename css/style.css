@@ -516,7 +516,7 @@ progress {
 
 .back-header{
   position: absolute;
-  height: 600px;
+  height: 400px;
 }
 
 #topbar{
@@ -912,12 +912,11 @@ progress {
 
 #modalidades{
   height: auto;
-
-  padding: 54px;
+  padding: 54px;  
 }
 
 .modalidade{
-  margin-bottom: 55px;
+  margin: 22.5px;
 }
 #seventh-header{
   margin-top: -23px;
@@ -928,8 +927,6 @@ progress {
   background-size: auto 150%;
 
   text-align: center;
-
-  overflow-x: hidden;
   height: auto;
 }
 
@@ -944,6 +941,7 @@ progress {
 #planos{
   margin-top: 30px;
   margin: 35px;
+  
 }
 
 .planos-elements{
@@ -1324,15 +1322,6 @@ progress {
     width: 100%;
   }
   
-
-  #previousplano{
-    position: absolute;
-    right: 93vw;
-  }
-  #nextplano{
-    position: absolute;
-    right: -96vw;
-  }
   
   #blogslider{
     width: 1400px;
@@ -1356,6 +1345,27 @@ progress {
   #second-header-fav svg{
     width:100%;
     height: auto;
+  }
+  
+  #modalidades{
+    height: auto;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    padding: 54px;
+  }
+
+  .header-text{
+    margin:0;
+    margin-top: 75px;
+
+  }
+
+  #planos{
+    
+  overflow-x: scroll;
+  }
+  .planos-elements{
+    border-radius: 0;
   }
 
 }
