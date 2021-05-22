@@ -508,11 +508,28 @@ progress {
   transform: translateY(0);
 }
 
-#header{ 
+#home #header{ 
   background-image: url(../img/header.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+#blog #header{ 
+  background-image: url(../img/blogheader.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+#erro #header{ 
+  background-image: url(../img/404header.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+#errocontainer{
+  position: absolute;
+  margin-top: -50px;
+}
+
+
 
 .back-header{
   position: absolute;
@@ -537,7 +554,7 @@ progress {
   display: inline;
 }
 #topbar  #desktopbar li a{
-  color: var(--fontcolor)!important;
+  color: var(--fontcolor);
   text-decoration: none;
   font-size: 13px;
   transition: ease-in-out 0.32s ;
@@ -1213,6 +1230,18 @@ progress {
   margin-top: 25px;
 }
 
+#errorbutton{
+  cursor: pointer;
+  transition: 1s;
+  max-width: 250px;
+
+}
+#errorbutton:hover{
+  
+  box-shadow: inset 0 -100px 0 0 green;
+  
+}
+
 @media (min-width: 1130px){
   
   .container-fav{
@@ -1296,8 +1325,14 @@ progress {
   #topbar img{
     margin: auto;
   }
-  #header{
+  #home #header{
     background: none;
+  }
+  #blog #header{
+    background: none;
+  }
+  #erro #header{
+   background-size: 1800px;
   }
   .header-form{
     width:100%;
@@ -1367,6 +1402,16 @@ progress {
   .planos-elements{
     border-radius: 0;
   }
+  
+  #errorbutton{
+    width: 100%;
+  }
+
+  #errocontainer{
+    position: initial;
+    margin-top: 50px;
+  }
+
 
 }
 
