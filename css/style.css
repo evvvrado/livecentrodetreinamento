@@ -523,6 +523,11 @@ progress {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+#pre-matricula-concluida #header{ 
+  background-image: url(../img/concluidaheader.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
 
 #errocontainer{
   position: absolute;
@@ -1309,6 +1314,66 @@ progress {
   color: var(--principal);
 }
 
+#searchbar{
+  background-color: white;
+  width: 100%;
+}
+
+#searchbar input{
+  border: solid 1px #B2B2B2;
+  border-radius: 0;
+  font-size: 13px;
+  outline-style: none;
+  font-family: var(--fonte2);
+  width: 100%;
+  padding: 10px;
+}
+
+#newsletter{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  width: 100%;
+  background: linear-gradient(180deg, #F15131 0%, #F58B0F 100%);
+  box-shadow: 0px 16px 60px -40px rgba(52, 52, 52, 0.25);
+}
+#newsletter-component{
+  margin-top: 5px;
+  width: 100%;
+  
+}
+#newsletter input{
+  border: solid 1px #B2B2B2;
+  border-radius: 0;
+  outline-style: none;
+  font-family: var(--fonte2);
+  width: 100%;
+  padding: 10px;
+}
+
+#newsletter button{
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 5px;
+  color: white;
+}
+
+#filter{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 16px 60px -40px rgba(52, 52, 52, 0.25);
+}
+
+#filter select{
+  border: solid 1px #B2B2B2;
+  border-radius: 0;
+  outline-style: none;
+  font-family: var(--fonte2);
+  padding: 10px;
+}
 
 
 @media (max-width: 991px){
@@ -1330,6 +1395,9 @@ progress {
   }
   #blog #header{
     background: none;
+  }
+  #pre-matricula-concluida #header{
+    background:none;
   }
   #erro #header{
    background-size: 1800px;
