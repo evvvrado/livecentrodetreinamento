@@ -37,6 +37,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* ROOT */
 
@@ -48,6 +49,7 @@
     --background3: #2A2C34;
     --fonte: 'SVN-Gilroy';
     --fonte2: 'Inters', sans-serif;
+    --fonte3: 'Heebo', sans-serif;
     --fontcolor: #fff;
     --descricao: #B3BEDA;
 }
@@ -527,6 +529,17 @@ progress {
   background-image: url(../img/concluidaheader.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+#especialista #header{ 
+  background-image: url(../img/especialistaheader.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+#freepass #header{ 
+  background-image: url(../img/freepassheader.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #errocontainer{
@@ -1229,7 +1242,7 @@ progress {
 .info-header-button{
   color: white;
   font-family: var(--fonte);
-  background: var(--principal);
+  background-color: #D6552B;
   padding: 15px;
   border-radius: 5px;
   margin-top: 25px;
@@ -1247,6 +1260,101 @@ progress {
   
 }
 
+
+.texto-covid>span {
+  /* font-family: 'SVN-Gilroy'; */
+  font-family: var(--fonte2);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 135%;
+  /* or 22px */
+  text-align: center;
+  color: #7C7C7C;
+}
+
+.titulo-card-covid {
+  /* font-family: 'Konnect Bold'; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 16px;
+  /* identical to box height, or 187% */
+  
+  color: #fff;
+}
+
+.img-card-covid {
+  max-width: 160px;
+}
+
+.img-card-covid>img {
+  height: 80px;
+  width: auto;
+}
+
+.texto-card-covid {
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 135%;
+  /* or 22px */
+  text-align: center;
+  color: #7C7C7C;
+}
+
+
+.text-parabens>h4 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 109%;
+  /* or 70px */
+  text-align: center;
+  color: white;
+}
+
+
+.text-parabens>img {
+  max-width: 200px;
+}
+.btn-green {
+  background: #0AA940;
+  border-radius: 6px;
+  font-family: 'Konnect Regular';
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+.btn-green:hover {
+    color: white;
+}
+
+.depoimentotexto{
+  font-family: var(--fonte3);
+  font-weight: normal;
+
+}
+#depoimentostitulo{
+  font-size: 27px;
+  margin-top: 10px;
+}
+#depoimentosdescricao{
+  font-size: 12px;
+}
+#depoimentosubnome{
+  color: #8C8C8C;
+  margin-top: 5px;
+}
+#depoimentoimagem{
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
 @media (min-width: 1130px){
   
   .container-fav{
@@ -1396,8 +1504,14 @@ progress {
   #blog #header{
     background: none;
   }
+  #freepass #header{
+    background: none;
+  }
   #pre-matricula-concluida #header{
     background:none;
+  }
+  #especialista #header{
+    background-size: 1800px;
   }
   #erro #header{
    background-size: 1800px;

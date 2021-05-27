@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="pt-br">
+
+
+<head>
+    <title>Live Academia</title>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Site de captura de leads da Live Academia">
+    <meta name="keywords" content="Academia, Live, Sports, Leads">
+    <meta name="author" content="Everaldo Cristiano Reis Júnior">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="shortcut icon" href="icon.ico" />
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    
+
+</head>
+
+
+
+<body id="freepass">
+    <div class="container-fluid justify-content-center w-100 mr-0" id="mobilebarcontainer">       
+        <ul id="mobilebar" class="container-fav flex-column justify-content-center">
+            
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#">Home</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#second-header">Quem Somos</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#seventh-header">Planos</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#sixth-header">Modalidades</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#tenth-header">Blog</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'" style="color: var(--principal)"><a href="#"><i class="far fa-user-circle"></i>  Área do Cliente</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><i class="fas fa-times" id="closemobilebar"></i></li>
+        </ul>   
+                    
+    </div>
+
+    <div class="align-content-center justify-content-center overflow-hidden back-header d-lg-none d-flex" style="max-width: 100vw;"> <img src="img/blogheader.png"></div>
+    <div id="header" class="container-fluid py-4 showin justify-content-center">
+
+
+        <div id="container-fav" class="container-fav">
+
+
+            <div id="topbar" class="row">
+
+                <div class="col">
+                    <a href="/"><img id="logo" src="img/logo.png"></a>
+                </div>  
+
+                <div class="col d-flex justify-content-end d-lg-none align-items-center" style="font-size: 35px;" id="hamburguer">
+                    <i class="fas fa-bars" onclick=" document.getElementById('mobilebarcontainer').style.top = '0'"></i>
+                </div> 
+                
+               
+                
+                <ul id="desktopbar">
+
+                    <li class="col"><a href="#">Home</a></li>
+                    <li class="col"><a href="#second-header">Quem Somos</a></li>
+                    <li class="col"><a href="#seventh-header">Planos</a></li>
+                    <li class="col"><a href="#sixth-header">Modalidades</a></li>
+                    <li class="col"><a href="#tenth-header">Blog</a></li>
+                    <li class="col"><a href="#"  style="color: var(--principal) !important"><i class="far fa-user-circle"></i>  Área do Cliente</a></li>
+
+                </ul>   
+
+
+                
+                   
+            </div>
+
+
+           
+           
+            <div class="row p-5 mt-5">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="694" height="95" class="d-lg-block d-none" viewBox="0 0 694 117" fill="none" style="padding-right: 125px;">
+                    <path d="M52.7337 26.8452H27.9775V90.8523H52.3688C75.3004 90.8523 88.7295 77.1382 88.7295 58.6661V58.4811C88.7295 40.0138 75.4804 26.8452 52.7337 26.8452ZM70.6392 58.9437C70.6392 69.278 63.6035 75.1269 52.9186 75.1269H45.6981V42.483H52.9138C63.6035 42.483 70.6343 48.5169 70.6343 58.7587V58.9437H70.6392ZM261.468 65.6157H292.165V51.624H261.468V41.8401H295.362V26.8452H243.928V90.8523H295.819V75.7649H261.468V65.6157ZM98.412 90.8523H116.133V26.8452H98.412V90.8523ZM632.291 75.7649V65.6157H662.988V51.624H632.291V41.8401H666.184V26.8452H614.75V90.8523H666.642V75.7649H632.291V75.7649ZM388.178 65.6157H471.842V51.624H388.178V41.8401H475.039V26.8452H370.643V90.8523H475.501V75.7649H388.178V65.6157ZM525.583 60.6775L499.275 26.8452H482.736V90.8523H500.277V55.7392L527.685 90.8523H543.123V26.8452H525.583V60.6775ZM361.685 48.7945V48.6095C361.685 42.2979 359.768 37.4522 356.021 33.7071C351.73 29.4117 344.967 26.8501 335.192 26.8501H304.952V90.8523H322.673V71.4695H330.531L343.41 90.8572H363.782L348.524 68.5475C356.479 65.1579 361.685 58.6661 361.685 48.7945ZM343.964 49.9828C343.964 54.6483 340.403 57.5704 334.462 57.5704H322.677V42.1177H334.37C340.218 42.1177 343.96 44.6793 343.96 49.7978V49.9828H343.964ZM550.981 42.3904H570.074V90.8523H587.799V42.3904H606.984V26.8452H550.981V42.3904V42.3904Z" fill="white"/>
+                    <path d="M32.9354 1.98931V13.7846H14.6699V103.822H32.9403V115.617H1.41603V1.98931H32.9354ZM34.3172 0.611084H32.9403H1.41603H0.0390625V1.98931V115.617V117H1.41603H32.9354H34.3124V115.617V103.822V102.444H32.9354H16.0469V15.1677H32.9354H34.3124V13.7894V1.98931V0.611084H34.3172Z" fill="white"/>
+                    <path d="M691.714 1.98858V115.617H660.194V103.821H678.465V13.7887H660.194V1.98858H691.714ZM693.096 0.610352H691.714H660.194H658.817V1.98858V13.7838V15.1621H660.194H677.083V102.443H660.194H658.817V103.821V115.617V117H660.194H691.714H693.096V115.617V1.98858V0.610352Z" fill="white"/>
+                    <path d="M195.466 8.20772L211.649 17.1686L202.307 34.5255H235.033V51.1324H193.369L185.895 65.0169H235.033V81.6237H176.952L161.84 109.704L145.657 100.744L155.948 81.6237H125.109V65.0169H164.886L172.359 51.1324H125.109V34.5255H181.297L195.466 8.20772ZM194.911 6.32788L194.25 7.55513L180.475 33.1473H125.109H123.732V34.5303V51.1372V52.5154H125.109H170.048L164.063 63.6386H125.109H123.732V65.0169V81.6237V83.0068H125.109H153.636L144.44 100.091L143.793 101.294L144.985 101.956L161.168 110.917L162.39 111.594L163.051 110.367L177.775 83.0117H235.028H236.41V81.6286V65.0217V63.6435H235.028H188.202L194.191 52.5203H235.033H236.415V51.1421V34.5352V33.1521H235.033H204.618L212.865 17.8309L213.513 16.628L212.32 15.9657L196.137 7.00482L194.911 6.32788Z" fill="white"/>
+                </svg>
+
+
+ 
+                
+        
+                            
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid bg-branco" >
+        <div class="container" id="covid">
+            <div class="row py-5 justify-content-center">
+                    <div class="col-12 col-lg-6 px-4 px-lg-5 text-center texto-covid">
+                        <h2>Covid-19</h2>
+                        <span>Juntos somos mais fortes e só assim faremos da nossa academia um lugar seguro para todos. Sua saúde é prioridade aqui! Algumas mudanças importantes:</span>
+                    </div>
+            </div>
+            <div class="row px-4 px-lg-5 py-5">
+
+                    <div class="col-12 col-md-6 col-lg-3 px-4" >
+                        <div class="row">
+                            <div class="col-12 text-center titulo-card-covid">
+                                    <span>Desinfecção</span>
+                            </div>
+                        </div>
+                        <div class="row mt-2 px-4 justify-content-center">
+                            <div class="col-8 col-lg-12 py-4 text-center img-card-covid"  style="background-color: var(--principal);">
+                                    <img src="./img/desinfeccao.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12 texto-card-covid">
+                                    <span>Desinfetamos nosso espaço de 2 a 3 vezes ao dia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 px-4 mt-4 mt-md-0 mt-lg-0">
+                        <div class="row">
+                            <div class="col-12 text-center titulo-card-covid" >
+                                    <span>Distânciamento</span>
+                            </div>
+                        </div>
+                        <div class="row mt-2 px-4 justify-content-center">
+                            <div class="col-8 col-lg-12 bg-primaria py-4 text-center img-card-covid" style="background-color: var(--principal);">
+                                    <img src="./img/distanciamento.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12 texto-card-covid">
+                                    <span>Nossos aparelhos estão localizados a uma distância segura uns dos outros para que você possa treinar com tranquilidade</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 px-4 mt-4 mt-lg-0">
+                        <div class="row">
+                            <div class="col-12 text-center titulo-card-covid">
+                                    <span>Agendamento</span>
+                            </div>
+                        </div>
+                        <div class="row mt-2 px-4 justify-content-center">
+                            <div class="col-8 col-lg-12 bg-primaria py-4 text-center img-card-covid" style="background-color: var(--principal);">
+                                    <img src="./img/agendamento.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12 texto-card-covid">
+                                    <span>Antes de treinar, agende o melhor horário para você, pois assim evitamos aglomerações</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 px-4 mt-4 mt-lg-0">
+                        <div class="row">
+                            <div class="col-12 text-center titulo-card-covid">
+                                    <span>Temperatura</span>
+                            </div>
+                        </div>
+                        <div class="row mt-2 px-4 justify-content-center">
+                            <div class="col-8 col-lg-12 bg-primaria py-4 text-center img-card-covid"  style="background-color: var(--principal);">
+                                    <img src="./img/temperatura.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12 texto-card-covid">
+                                    <span>Não permitiremos a entrada de alunos com temperatura (será aferida na recepção) acima de 37,8ºC </span>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="container-fluid p-5"  style="margin-top: 150px;margin-bottom: 300px" >
+        <div class="container-fav">
+            <div class="row">
+                <div class="col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center">
+                    <div class="depoimentotexto">
+                        <div id="depoimentosdescricao">DEPOIMENTOS</div>
+                        <div id="depoimentostitulo">
+                            Veja oque estão<br> dizendo nas redes<br>
+                            sociais
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 d-flex flex-column m-lg-0 mt-5">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="30" viewBox="0 0 37 30" fill="none">
+                            <path opacity="0.6" d="M16.095 1.41582L16.2698 0.782715H15.613H7.76687H7.42897L7.30295 1.09623L2.70745 12.5285C0.877172 16.9142 0.530273 18.4958 0.530273 20.6592C0.530273 23.0463 1.38948 25.0843 2.85976 26.5254C4.32887 27.9655 6.38036 28.7827 8.71792 28.7827C11.0145 28.7827 13.0466 27.9862 14.5067 26.5553C15.9684 25.1227 16.8263 23.0841 16.8263 20.6592C16.8263 17.3849 15.295 14.8958 12.7211 13.6319L16.095 1.41582ZM34.7989 1.41582L34.9738 0.782715H34.317H26.4708H26.1329L26.0069 1.09623L21.4114 12.5285C19.5811 16.9143 19.2342 18.4958 19.2342 20.6592C19.2342 23.0463 20.0934 25.0843 21.5637 26.5254C23.0328 27.9655 25.0843 28.7827 27.4219 28.7827C29.7185 28.7827 31.7506 27.9862 33.2107 26.5553C34.6723 25.1227 35.5303 23.0841 35.5303 20.6592C35.5303 17.3849 33.999 14.8958 31.4251 13.6319L34.7989 1.41582Z" stroke="#D6552B"/>
+                        </svg>
+                    </div>
+
+                    <div class="mt-4 depoimentotexto">
+                        A abertura oficial do colégio deu-se a 6 de março de 1926, com a bênção do Arcebispo Dom Duarte Leopoldo e Silva. Logo o estabelecimento se impôs: urgia um novo prédio, que oferecesse melhores condições ao número sempre crescente de alunas. 
+                    </div>
+                    <div class="d-flex align-items-center mt-5">
+                        
+                        <img src="./img/depoimento1.jpg"  id="depoimentoimagem">
+                        
+                        <div  class="depoimentotexto ml-3">
+                            <div id="depoimentonome">Jeferson Arantes</div>
+                            <div id="depoimentosubnome">UI Designer</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+ <div class="container-fluid h-100" id="mobileinfocontainer">       
+        <div id="mobileinfo" class="container-fav d-flex align-content-center flex-column"> 
+
+            <div id="background-header" class="container position-absolute">
+                <img src="./img/details.png" style="z-index: -4;position:absolute; height: 50vw; animation: line2 10s ease-in-out infinite;">
+            </div>
+
+            <div class="row justify-content-center  align-items-center mt-5" style="font-family: var(--fonte); color: var(--principal)">Unidade Centro</div>
+            <div style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;' class="row justify-content-center align-items-center mb-3">Ver mapa <i class="fas fa-arrow-right  ml-2"></i></div>
+         
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fas fa-map-marker-alt" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+
+            <div class="row justify-content-center align-items-center">Siga nossas redes sociais</div>
+
+            <div class="row justify-content-center align-items-center">
+                <a style="color:var(--principal)!important"  target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/LivePersonalTrainerCenter"><i class="fab fa-facebook"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Instagram" href="https://www.instagram.com/livectpersonalizado"><i class="fab fa-instagram ml-2 "></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Tiktok" href="https://www.tiktok.com/@livetrainerarvore"><i class="fab fa-tiktok ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/trainer_live"><i class="fab fa-twitter ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Youtube" href="https://www.youtube.com/channel/UCqQJwIEtsz0NcBn9qm1DOQw"><i class="fab fa-youtube ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/company/livearvoregrande/ "><i class="fab fa-linkedin ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5535991216399"><i class="fab fa-whatsapp ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Pinterest" href="https://br.pinterest.com/livearvo"><i class="fab fa-pinterest ml-2"></i></a>
+            </div>
+
+            <div class="row justify-content-center  align-items-center mt-5" style="font-family: var(--fonte);  color: var(--principal)">Árvore Grande</div>            
+            <div style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;' class="row justify-content-center  align-items-center mb-3">Ver mapa <i class="fas fa-arrow-right  ml-2"></i></div>
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fas fa-map-marker-alt" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+
+            <div class="row justify-content-center align-items-center">Siga nossas redes sociais</div>
+
+            <div class="row justify-content-center align-items-center">
+                <a style="color:var(--principal)!important"  target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/LivePersonalTrainerCenter"><i class="fab fa-facebook"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Instagram" href="https://www.instagram.com/livectpersonalizado"><i class="fab fa-instagram ml-2 "></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Tiktok" href="https://www.tiktok.com/@livetrainerarvore"><i class="fab fa-tiktok ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/trainer_live"><i class="fab fa-twitter ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Youtube" href="https://www.youtube.com/channel/UCqQJwIEtsz0NcBn9qm1DOQw"><i class="fab fa-youtube ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/company/livearvoregrande/ "><i class="fab fa-linkedin ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5535991216399"><i class="fab fa-whatsapp ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Pinterest" href="https://br.pinterest.com/livearvo"><i class="fab fa-pinterest ml-2"></i></a>
+            </div>
+
+            <div class="row justify-content-center m-5"><i class="fas fa-times w-100" id="closemobilebar" onclick="document.getElementById('mobileinfocontainer').style.bottom = '-200vh'"></i></div>
+        </div>   
+                    
+    </div>
+    
+
+    <div class="container-fluid" id="info-header">
+        <div class="container-fav" id="info-header-fav" style="width: 61.5%; margin:0 auto;">
+            <div class="row pb-3 "><div class="col d-flex justify-content-between" style="font-family: var(--fonte); color: var(--principal)">Unidade Centro <span style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;'>Ver mapa <i class="fas fa-arrow-right  ml-2"></i></span></div> <div class="col d-flex align-items-center justify-content-center" style="font-size: 25px; margin-top: -45px;"><i class="fas fa-angle-down" onclick="document.getElementById('info-header').style.bottom = '-100vh'" style=" color: var(--principal); cursor:pointer;"></i></div> <div class="col d-flex justify-content-between" style="font-family: var(--fonte);  color: var(--principal)">Árvore Grande <span style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;'>Ver mapa <i class="fas fa-arrow-right ml-2"></i></span></div></div>
+            <div class="row pb-3 "><div class="col"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div><div class="col"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div></div>
+            <div class="row pb-3 "><div class="col"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div><div class="col"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div></div>
+            <div class="row pb-3 "><div class="col"><i class="mr-3 fas fa-map-marker-alt" style=" color: #4B5368"></i> 35 9 8825 6595</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div>   <div class="col"><i class="mr-3 fas fa-map-marker-alt" style=" color: #4B5368"></i> 35 9 8825 6595</div></div>
+            <div class="row pb-3"><div class="col">Siga nossas redes sociais</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div>  <div class="col">Siga nossas redes sociais</div></div>
+            <div class="row pb-3 mb-3">
+                <div class="col">
+                    <a style="color:var(--principal)!important"  target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/LivePersonalTrainerCenter"><i class="fab fa-facebook"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Instagram" href="https://www.instagram.com/livectpersonalizado"><i class="fab fa-instagram ml-2 "></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Tiktok" href="https://www.tiktok.com/@livetrainerarvore"><i class="fab fa-tiktok ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/trainer_live"><i class="fab fa-twitter ml-2"></i></a> 
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Youtube" href="https://www.youtube.com/channel/UCqQJwIEtsz0NcBn9qm1DOQw"><i class="fab fa-youtube ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/company/livearvoregrande/ "><i class="fab fa-linkedin ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5535991216399"><i class="fab fa-whatsapp ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Pinterest" href="https://br.pinterest.com/livearvo"><i class="fab fa-pinterest ml-2"></i></a>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div>
+                <div class="col">
+                    <a style="color:var(--principal)!important"  target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/LivePersonalTrainerCenter"><i class="fab fa-facebook"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Instagram" href="https://www.instagram.com/livectpersonalizado"><i class="fab fa-instagram ml-2 "></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Tiktok" href="https://www.tiktok.com/@livetrainerarvore"><i class="fab fa-tiktok ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/trainer_live"><i class="fab fa-twitter ml-2"></i></a> 
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Youtube" href="https://www.youtube.com/channel/UCqQJwIEtsz0NcBn9qm1DOQw"><i class="fab fa-youtube ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/company/livearvoregrande/ "><i class="fab fa-linkedin ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5535991216399"><i class="fab fa-whatsapp ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Pinterest" href="https://br.pinterest.com/livearvo"><i class="fab fa-pinterest ml-2"></i></a>
+                </div>
+            </div>
+            <div class="row"><div class="col"><span class="info-header-button"> Fale conosco</span> </div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div><div class="col"><span class="info-header-button">Fale conosco</span> </div></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid" >
+        <div class="container-fav d-flex justify-content-center">
+            <span id="foaterbar-background" class="d-lg-flex d-none"></span>
+            <div class="row justify-content-center"  id="foater-bar">
+                <div class="col-4  d-none d-lg-flex align-items-center  d-none d-lg-flex">
+                    <span style="font-size: 25px">Unidades</span>
+                </div>
+                
+                <div class="col-4 d-none d-lg-flex align-items-center justify-content-center" style="cursor: pointer;" onclick="document.getElementById('info-header').style.bottom = 0" >
+                    <i class="fas fa-angle-up"></i> 
+                </div>
+
+                <div class="col-4 d-flex d-lg-none align-items-center justify-content-center"  onclick="document.getElementById('mobileinfocontainer').style.bottom = 0" >
+                    <!-- <i class="fas fa-angle-up"></i>  -->
+                    <i class="fas fa-info-circle" style="color: white;"></i>
+                </div>
+
+                <div class="foater-bar-names col-4  d-none d-lg-flex align-items-center"  style="font-size: 13px ">
+                    <span style="display:flex; align-items: flex-end;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none">
+                        <path d="M7.29639 29.4873H25.2964" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.2964 17.4873C18.5055 17.4873 20.2964 15.6964 20.2964 13.4873C20.2964 11.2782 18.5055 9.4873 16.2964 9.4873C14.0872 9.4873 12.2964 11.2782 12.2964 13.4873C12.2964 15.6964 14.0872 17.4873 16.2964 17.4873Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M26.2964 13.4873C26.2964 22.4873 16.2964 29.4873 16.2964 29.4873C16.2964 29.4873 6.29639 22.4873 6.29639 13.4873C6.29639 10.8351 7.34996 8.2916 9.22532 6.41624C11.1007 4.54087 13.6442 3.4873 16.2964 3.4873C18.9486 3.4873 21.4921 4.54087 23.3675 6.41624C25.2428 8.2916 26.2964 10.8351 26.2964 13.4873V13.4873Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>Centro</span>
+                    <span style="margin-left: 35px; display:flex; align-items: flex-end;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none">
+                        <path d="M7.29639 29.4873H25.2964" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.2964 17.4873C18.5055 17.4873 20.2964 15.6964 20.2964 13.4873C20.2964 11.2782 18.5055 9.4873 16.2964 9.4873C14.0872 9.4873 12.2964 11.2782 12.2964 13.4873C12.2964 15.6964 14.0872 17.4873 16.2964 17.4873Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M26.2964 13.4873C26.2964 22.4873 16.2964 29.4873 16.2964 29.4873C16.2964 29.4873 6.29639 22.4873 6.29639 13.4873C6.29639 10.8351 7.34996 8.2916 9.22532 6.41624C11.1007 4.54087 13.6442 3.4873 16.2964 3.4873C18.9486 3.4873 21.4921 4.54087 23.3675 6.41624C25.2428 8.2916 26.2964 10.8351 26.2964 13.4873V13.4873Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>Arvore Grande</span>
+                </div> 
+            </div>
+        </div>
+    </div>
+        
+
+    <div id="footer" class="container-fluid py-4 mt-5">
+        <div class="container-fav" id="footer-fav">
+            <div class="row d-flex justify-content-center justify-content-lg-between">
+                    <div class=""><img src="./img/LiveV Preto e Branco.png" height="61px"></div>
+                    <div class="text-center  col-12 col-lg">
+                        <ul>
+
+                            <li class=""><a href="#">Home</a></li>
+                            <li class=""><a href="#second-header">Quem Somos</a></li>
+                            <li class=""><a href="#seventh-header">Planos</a></li>
+                            <li class=""><a href="#sixth-header">Modalidades</a></li>
+                            <li class=""><a href="#tenth-header">Blog</a></li>
+        
+                        </ul>  
+                    </div>
+                    <div class="d-flex align-items-center  px-4 px-lg-5 my-3 text-center text-lg-center my-lg-0">
+                        <div class="w-100">
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/LivePersonalTrainerCenter"><svg class="svg-inline--fa fa-facebook fa-w-16 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg><!-- <i class="fab fa-facebook fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Instagram" href="https://www.instagram.com/livectpersonalizado"><svg class="svg-inline--fa fa-instagram fa-w-14 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="fab fa-instagram ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Tiktok" href="https://www.tiktok.com/@livetrainerarvore"><svg class="svg-inline--fa fa-tiktok fa-w-14 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg><!-- <i class="fab fa-tiktok ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/trainer_live"><svg class="svg-inline--fa fa-twitter fa-w-16 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="fab fa-twitter ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a> <br>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Youtube" href="https://www.youtube.com/channel/UCqQJwIEtsz0NcBn9qm1DOQw"><svg class="svg-inline--fa fa-youtube fa-w-18 mt-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i class="fab fa-youtube mt-3  fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/company/livearvoregrande/ "><svg class="svg-inline--fa fa-linkedin fa-w-14 mt-3 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg><!-- <i class="fab fa-linkedin mt-3 ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5535991216399"><svg class="svg-inline--fa fa-whatsapp fa-w-14 mt-3 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg><!-- <i class="fab fa-whatsapp mt-3 ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Pinterest" href="https://br.pinterest.com/livearvo"><svg class="svg-inline--fa fa-pinterest fa-w-16 mt-3 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"></path></svg><!-- <i class="fab fa-pinterest mt-3 ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a>
+                        </div>
+                    </div>
+            </div>
+            <hr>
+            <div class="row align-items-center justify-content-center justify-content-lg-between"  style="margin-bottom: 75px;" class="d-flex">
+                <div class="">Copyright © 2021 Live Academia</div>
+                <div class="">Desenvolvido por <a title="Clique para visitar o site da Gefit" href="https://7seventrends.com" target="_blank" rel="nofollow noopener"><img class="p-2" src="./img/7seven logo.png" alt=""></a> Com Metodologia <a title="Clique para visitar o site da Gefit" href="https://gefit.com.br" target="_blank" rel="nofollow noopener"><img class="p-2" src="./img/gefit logo.png" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js "></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+</body>
+
+
+</html>
