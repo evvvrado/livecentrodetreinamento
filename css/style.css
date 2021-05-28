@@ -541,6 +541,11 @@ progress {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#areaexclusiva #header{ 
+  background-image: url(../img/areaexclusivaheader.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #errocontainer{
   position: absolute;
@@ -1483,6 +1488,29 @@ progress {
   padding: 10px;
 }
 
+.area-info{
+  width: 250px;
+  height: 250px;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--background2);
+}
+
+.area-info::after{
+  content: " ";
+  background-color: white;
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+}
+
 
 @media (max-width: 991px){
 
@@ -1514,6 +1542,9 @@ progress {
     background-size: 1800px;
   }
   #erro #header{
+   background-size: 1800px;
+  }
+  #areaexclusiva #header{
    background-size: 1800px;
   }
   .header-form{

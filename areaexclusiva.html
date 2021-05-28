@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="pt-br">
+
+
+<head>
+    <title>Live Academia</title>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Site de captura de leads da Live Academia">
+    <meta name="keywords" content="Academia, Live, Sports, Leads">
+    <meta name="author" content="Everaldo Cristiano Reis Júnior">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="shortcut icon" href="icon.ico" />
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    
+
+</head>
+
+
+
+<body id="areaexclusiva">
+    <div class="container-fluid justify-content-center w-100 mr-0" id="mobilebarcontainer">       
+        <ul id="mobilebar" class="container-fav flex-column justify-content-center">
+            
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#">Home</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#second-header">Quem Somos</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#seventh-header">Planos</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#sixth-header">Modalidades</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><a href="#tenth-header">Blog</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'" style="color: var(--principal)"><a href="#"><i class="far fa-user-circle"></i>  Área do Cliente</a></li>
+            <li class="row m-0 d-flex justify-content-center" onclick="document.getElementById('mobilebarcontainer').style.top = '-200vh'"><i class="fas fa-times" id="closemobilebar"></i></li>
+        </ul>   
+                    
+    </div>
+
+    <div id="header" class="container-fluid py-4 showin justify-content-center">
+
+
+        <div id="container-fav" class="container-fav">
+
+
+            <div id="topbar" class="row">
+
+                <div class="col">
+                    <a href="/"><img id="logo" src="img/logo.png"></a>
+                </div>  
+
+                <div class="col d-flex justify-content-end d-lg-none align-items-center" style="font-size: 35px;" id="hamburguer">
+                    <i class="fas fa-bars" onclick=" document.getElementById('mobilebarcontainer').style.top = '0'"></i>
+                </div> 
+                
+               
+                
+                <ul id="desktopbar">
+
+                    <li class="col"><a href="#">Home</a></li>
+                    <li class="col"><a href="#second-header">Quem Somos</a></li>
+                    <li class="col"><a href="#seventh-header">Planos</a></li>
+                    <li class="col"><a href="#sixth-header">Modalidades</a></li>
+                    <li class="col"><a href="#tenth-header">Blog</a></li>
+                    <li class="col"><a href="#"  style="color: var(--principal) !important"><i class="far fa-user-circle"></i>  Área do Cliente</a></li>
+
+                </ul>   
+
+
+                
+                   
+            </div>
+
+           
+           
+           
+            <div class="row p-5 mt-5"> 
+
+                <div class="col-lg-6 col-12">
+                    <div class="header-text">
+                        <h1 class="title">Área exclusiva para alunos e professores</h1>
+                    </div>
+                </div> 
+                
+                <div class="col-lg-6 align-content-center d-lg-flex  d-none">
+                    <svg viewBox="0 0 474 80" fill="none" style="margin-bottom: 35px;" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.1279 18.186H19.2198V61.9017H35.8786C51.5405 61.9017 60.7123 52.5352 60.7123 39.9191V39.7927C60.7123 27.18 51.6635 18.186 36.1279 18.186ZM48.357 40.1087C48.357 47.1668 43.5517 51.1615 36.2542 51.1615H31.3226V28.8663H36.2508C43.5517 28.8663 48.3536 32.9874 48.3536 39.9823V40.1087H48.357ZM178.69 44.6656H199.655V35.1095H178.69V28.4273H201.839V18.186H166.71V61.9017H202.151V51.5973H178.69V44.6656ZM67.3253 61.9017H79.4281V18.186H67.3253V61.9017ZM431.954 51.5973V44.6656H452.92V35.1095H431.954V28.4273H455.103V18.186H419.975V61.9017H455.416V51.5973H431.954ZM265.23 44.6656H322.371V35.1095H265.23V28.4273H324.555V18.186H253.254V61.9017H324.87V51.5973H265.23V44.6656ZM359.075 41.2928L341.107 18.186H329.812V61.9017H341.792V37.9201L360.511 61.9017H371.055V18.186H359.075V41.2928ZM247.136 33.177V33.0506C247.136 28.7399 245.827 25.4304 243.268 22.8726C240.337 19.9389 235.718 18.1894 229.042 18.1894H208.388V61.9017H220.491V48.6636H225.858L234.654 61.905H248.568L238.147 46.6679C243.58 44.3529 247.136 39.9191 247.136 33.177ZM235.033 33.9886C235.033 37.1751 232.601 39.1708 228.543 39.1708H220.494V28.6169H228.48C232.474 28.6169 235.03 30.3664 235.03 33.8622V33.9886H235.033ZM376.422 28.8031H389.462V61.9017H401.568V28.8031H414.671V18.186H376.422V28.8031Z" fill="url(#paint0_linear)"/>
+                        <path d="M22.606 1.20986V9.26581H10.131V70.7598H22.6094V78.8157H1.07887V1.20986H22.606ZM23.5498 0.268555H22.6094H1.07887H0.138428V1.20986V78.8157V79.7604H1.07887H22.606H23.5465V78.8157V70.7598V69.8185H22.606H11.0715V10.2104H22.606H23.5465V9.26913V1.20986V0.268555H23.5498Z" fill="white"/>
+                        <path d="M472.54 1.20937V78.8152H451.012V70.7593H463.491V9.26865H451.012V1.20937H472.54ZM473.483 0.268066H472.54H451.012H450.072V1.20937V9.26532V10.2066H451.012H462.547V69.818H451.012H450.072V70.7593V78.8152V79.7599H451.012H472.54H473.483V78.8152V1.20937V0.268066Z" fill="white"/>
+                        <path d="M133.612 5.45699L144.664 11.5771L138.284 23.4315H160.635V34.7737H132.179L127.075 44.2566H160.635V55.5988H120.967L110.646 74.7774L99.5929 68.6573L106.621 55.5988H85.5593V44.2566H112.726L117.83 34.7737H85.5593V23.4315H123.935L133.612 5.45699ZM133.233 4.1731L132.781 5.01129L123.373 22.4902H85.5593H84.6189V23.4349V34.7771V35.7184H85.5593H116.252L112.164 43.3153H85.5593H84.6189V44.2566V55.5988V56.5434H85.5593H105.043L98.7621 68.2116L98.3201 69.0331L99.1343 69.4855L110.187 75.6056L111.021 76.068L111.473 75.2298L121.529 56.5467H160.632H161.576V55.6021V44.2599V43.3186H160.632H128.65L132.741 35.7217H160.635H161.579V34.7804V23.4382V22.4936H160.635H139.862L145.495 12.0295L145.937 11.2079L145.123 10.7556L134.07 4.63543L133.233 4.1731Z" fill="white"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="15.5743" y1="45.2044" x2="476.392" y2="40.0439" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F7941D"/>
+                                <stop offset="1" stop-color="#EF4136"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+
+
+ 
+                
+        
+                            
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid" style="margin-top: 100px;">
+        <div class="container-fav">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
+                    <div style="width:250px; border-bottom: solid 3px var(--principal); text-align: center; cursor: pointer;">Professor</div>
+                    
+                    <div style="width:250px; border-bottom: solid 1px white; text-align: center; cursor: pointer;">Aluno</div>
+                </div>
+            </div>
+
+            <div class="row mt-5 d-flex justify-content-center">
+                <div class="title">Ainda está com dúvida?</div>
+            </div>
+
+            <div class="row mt-5 d-flex justify-content-center">
+                <div class="col-lg-4 col-12 d-flex justify-content-center  mt-lg-0 mt-4">
+                    <div class="area-info">
+                        <span class="mt-2">Covid-19</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12 d-flex justify-content-center mt-lg-0 mt-4">
+                    <div class="area-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path d="M18.4944 24.9245V19.2994C18.4944 19.0507 18.3957 18.8123 18.2198 18.6364C18.044 18.4606 17.8056 18.3619 17.5569 18.3619H13.8069C13.5583 18.3619 13.3198 18.4606 13.144 18.6364C12.9682 18.8123 12.8694 19.0507 12.8694 19.2994V24.9245C12.8694 25.1731 12.7707 25.4115 12.5949 25.5873C12.4191 25.7632 12.1807 25.8619 11.932 25.862L6.30773 25.8627C6.18461 25.8627 6.06269 25.8385 5.94893 25.7914C5.83518 25.7443 5.73181 25.6752 5.64475 25.5882C5.55768 25.5011 5.48861 25.3978 5.44149 25.284C5.39437 25.1703 5.37012 25.0483 5.37012 24.9252V14.09C5.37012 13.9594 5.39741 13.8302 5.45024 13.7108C5.50308 13.5913 5.58029 13.4842 5.67693 13.3964L15.0513 4.87277C15.2238 4.71586 15.4487 4.62891 15.6819 4.62891C15.9152 4.6289 16.14 4.71583 16.3126 4.87272L25.6883 13.3964C25.7849 13.4842 25.8621 13.5913 25.915 13.7108C25.9678 13.8302 25.9951 13.9594 25.9951 14.0901V24.9252C25.9951 25.0483 25.9709 25.1703 25.9237 25.284C25.8766 25.3978 25.8076 25.5011 25.7205 25.5882C25.6334 25.6752 25.5301 25.7443 25.4163 25.7914C25.3025 25.8385 25.1806 25.8627 25.0575 25.8627L19.4318 25.862C19.1832 25.862 18.9448 25.7632 18.769 25.5874C18.5932 25.4115 18.4944 25.1731 18.4944 24.9245V24.9245Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="mt-2">Estrutura da academia</span>
+                    </div>
+                </div>                
+                
+                <div class="col-lg-4 col-12 d-flex justify-content-center mt-lg-0 mt-4">
+                    <div class="area-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path d="M26.6553 6.62329H4.15527C3.63751 6.62329 3.21777 7.04302 3.21777 7.56079V22.5608C3.21777 23.0786 3.63751 23.4983 4.15527 23.4983H26.6553C27.173 23.4983 27.5928 23.0786 27.5928 22.5608V7.56079C27.5928 7.04302 27.173 6.62329 26.6553 6.62329Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.0918 19.7483H23.8418" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.4668 19.7483H16.3418" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.2168 11.4106H27.5918" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="mt-2">Financeiro</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-12 d-flex justify-content-center mt-4">
+                   <div class="area-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path d="M28.7091 14.3108L25.8125 15.7591L22.0625 8.57764L24.9886 7.1146C25.2084 7.00468 25.4626 6.98549 25.6965 7.06116C25.9303 7.13683 26.1251 7.30131 26.2389 7.51919L29.1209 13.0384C29.1785 13.1487 29.2136 13.2695 29.224 13.3935C29.2345 13.5176 29.2201 13.6425 29.1818 13.7609C29.1435 13.8794 29.0819 13.989 29.0008 14.0834C28.9196 14.1779 28.8205 14.2552 28.7091 14.3108V14.3108Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.1873 15.6336L2.2907 14.1853C2.17934 14.1297 2.08019 14.0524 1.99903 13.958C1.91787 13.8635 1.85633 13.7539 1.818 13.6355C1.77967 13.517 1.76531 13.3921 1.77578 13.268C1.78624 13.144 1.82131 13.0232 1.87894 12.9129L4.76092 7.3937C4.87469 7.17583 5.06946 7.01135 5.30331 6.93568C5.53716 6.86 5.79137 6.87919 6.01121 6.98911L8.9373 8.45216L5.1873 15.6336Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M25.8125 15.7591L23.9375 17.9527L19.6253 22.2648C19.5109 22.3793 19.3687 22.4622 19.2127 22.5054C19.0567 22.5486 18.8921 22.5507 18.735 22.5114L11.9432 20.8135C11.8158 20.7816 11.6965 20.7234 11.5931 20.6425L5.1875 15.6335" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23.9375 17.9529L18.7812 14.2029L17.2812 15.3279C16.6321 15.8147 15.8426 16.0779 15.0312 16.0779C14.2199 16.0779 13.4304 15.8147 12.7812 15.3279L12.146 14.8514C12.0385 14.7709 11.9497 14.6681 11.8854 14.5502C11.8211 14.4323 11.7829 14.3019 11.7734 14.1679C11.7638 14.0339 11.7832 13.8995 11.8302 13.7736C11.8771 13.6478 11.9506 13.5335 12.0456 13.4385L16.6317 8.85247C16.7187 8.76541 16.8221 8.69636 16.9358 8.64924C17.0495 8.60213 17.1714 8.57788 17.2946 8.57788H22.0625" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.00488 8.45215L15.0189 6.69884C15.2338 6.63621 15.4639 6.65249 15.6678 6.74475L19.7188 8.57775" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.625 24.984L10.093 24.101C9.94971 24.0652 9.81688 23.996 9.70538 23.8991L7.0625 21.6018" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="mt-2">Pré-Venda</span>
+                   </div>
+                </div>
+                
+                <div class="col-lg-4 col-12 d-flex justify-content-center mt-4">
+                    <div class="area-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path d="M27.8701 7.53931H3.49512C2.97735 7.53931 2.55762 7.95904 2.55762 8.47681V21.6018C2.55762 22.1196 2.97735 22.5393 3.49512 22.5393H27.8701C28.3879 22.5393 28.8076 22.1196 28.8076 21.6018V8.47681C28.8076 7.95904 28.3879 7.53931 27.8701 7.53931Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.6826 18.7893C17.7537 18.7893 19.4326 17.1104 19.4326 15.0393C19.4326 12.9682 17.7537 11.2893 15.6826 11.2893C13.6115 11.2893 11.9326 12.9682 11.9326 15.0393C11.9326 17.1104 13.6115 18.7893 15.6826 18.7893Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.3076 7.53931L28.8076 14.1018" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.3076 22.5393L28.8076 15.9768" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.0576 7.53931L2.55762 14.1018" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.0576 22.5393L2.55762 15.9768" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="mt-2">Covid-19</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-12 d-flex justify-content-center mt-4">
+                    <div class="area-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path d="M9.78027 6.60181H6.96777C6.45001 6.60181 6.03027 7.02154 6.03027 7.53931V22.5393C6.03027 23.0571 6.45001 23.4768 6.96777 23.4768H9.78027C10.298 23.4768 10.7178 23.0571 10.7178 22.5393V7.53931C10.7178 7.02154 10.298 6.60181 9.78027 6.60181Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23.8428 6.60181H21.0303C20.5125 6.60181 20.0928 7.02154 20.0928 7.53931V22.5393C20.0928 23.0571 20.5125 23.4768 21.0303 23.4768H23.8428C24.3605 23.4768 24.7803 23.0571 24.7803 22.5393V7.53931C24.7803 7.02154 24.3605 6.60181 23.8428 6.60181Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24.7803 9.41431H27.5928C27.8414 9.41431 28.0799 9.51308 28.2557 9.68889C28.4315 9.86471 28.5303 10.1032 28.5303 10.3518V19.7268C28.5303 19.9754 28.4315 20.2139 28.2557 20.3897C28.0799 20.5655 27.8414 20.6643 27.5928 20.6643H24.7803" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.03027 20.6643H3.21777C2.96913 20.6643 2.73068 20.5655 2.55486 20.3897C2.37905 20.2139 2.28027 19.9754 2.28027 19.7268V10.3518C2.28027 10.1032 2.37905 9.86471 2.55486 9.68889C2.73068 9.51308 2.96913 9.41431 3.21777 9.41431H6.03027" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.7178 15.0393H20.0928" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="mt-2">Covid-19</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+ <div class="container-fluid h-100" id="mobileinfocontainer">       
+        <div id="mobileinfo" class="container-fav d-flex align-content-center flex-column"> 
+
+            <div id="background-header" class="container position-absolute">
+                <img src="./img/details.png" style="z-index: -4;position:absolute; height: 50vw; animation: line2 10s ease-in-out infinite;">
+            </div>
+
+            <div class="row justify-content-center  align-items-center mt-5" style="font-family: var(--fonte); color: var(--principal)">Unidade Centro</div>
+            <div style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;' class="row justify-content-center align-items-center mb-3">Ver mapa <i class="fas fa-arrow-right  ml-2"></i></div>
+         
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fas fa-map-marker-alt" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+
+            <div class="row justify-content-center align-items-center">Siga nossas redes sociais</div>
+
+            <div class="row justify-content-center align-items-center">
+                <a style="color:var(--principal)!important"  target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/LivePersonalTrainerCenter"><i class="fab fa-facebook"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Instagram" href="https://www.instagram.com/livectpersonalizado"><i class="fab fa-instagram ml-2 "></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Tiktok" href="https://www.tiktok.com/@livetrainerarvore"><i class="fab fa-tiktok ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/trainer_live"><i class="fab fa-twitter ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Youtube" href="https://www.youtube.com/channel/UCqQJwIEtsz0NcBn9qm1DOQw"><i class="fab fa-youtube ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/company/livearvoregrande/ "><i class="fab fa-linkedin ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5535991216399"><i class="fab fa-whatsapp ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Pinterest" href="https://br.pinterest.com/livearvo"><i class="fab fa-pinterest ml-2"></i></a>
+            </div>
+
+            <div class="row justify-content-center  align-items-center mt-5" style="font-family: var(--fonte);  color: var(--principal)">Árvore Grande</div>            
+            <div style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;' class="row justify-content-center  align-items-center mb-3">Ver mapa <i class="fas fa-arrow-right  ml-2"></i></div>
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+            <div class="row justify-content-center align-items-center p-2"><i class="mr-3 fas fa-map-marker-alt" style=" color: #4B5368"></i> 35 9 8825 6595</div>
+
+            <div class="row justify-content-center align-items-center">Siga nossas redes sociais</div>
+
+            <div class="row justify-content-center align-items-center">
+                <a style="color:var(--principal)!important"  target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/LivePersonalTrainerCenter"><i class="fab fa-facebook"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Instagram" href="https://www.instagram.com/livectpersonalizado"><i class="fab fa-instagram ml-2 "></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Tiktok" href="https://www.tiktok.com/@livetrainerarvore"><i class="fab fa-tiktok ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/trainer_live"><i class="fab fa-twitter ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Youtube" href="https://www.youtube.com/channel/UCqQJwIEtsz0NcBn9qm1DOQw"><i class="fab fa-youtube ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/company/livearvoregrande/ "><i class="fab fa-linkedin ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5535991216399"><i class="fab fa-whatsapp ml-2"></i></a>
+                <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Pinterest" href="https://br.pinterest.com/livearvo"><i class="fab fa-pinterest ml-2"></i></a>
+            </div>
+
+            <div class="row justify-content-center m-5"><i class="fas fa-times w-100" id="closemobilebar" onclick="document.getElementById('mobileinfocontainer').style.bottom = '-200vh'"></i></div>
+        </div>   
+                    
+    </div>
+    
+
+    <div class="container-fluid" id="info-header">
+        <div class="container-fav" id="info-header-fav" style="width: 61.5%; margin:0 auto;">
+            <div class="row pb-3 "><div class="col d-flex justify-content-between" style="font-family: var(--fonte); color: var(--principal)">Unidade Centro <span style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;'>Ver mapa <i class="fas fa-arrow-right  ml-2"></i></span></div> <div class="col d-flex align-items-center justify-content-center" style="font-size: 25px; margin-top: -45px;"><i class="fas fa-angle-down" onclick="document.getElementById('info-header').style.bottom = '-100vh'" style=" color: var(--principal); cursor:pointer;"></i></div> <div class="col d-flex justify-content-between" style="font-family: var(--fonte);  color: var(--principal)">Árvore Grande <span style='font-family: var(--fonte2); font-size: 13px; color: #4B5368;'>Ver mapa <i class="fas fa-arrow-right ml-2"></i></span></div></div>
+            <div class="row pb-3 "><div class="col"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div><div class="col"><i class="mr-3 fab fa-whatsapp" style=" color: #4B5368"></i> 35 9 8825 6595</div></div>
+            <div class="row pb-3 "><div class="col"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div><div class="col"><i class="mr-3 fas fa-envelope" style=" color: #4B5368"></i> 35 9 8825 6595</div></div>
+            <div class="row pb-3 "><div class="col"><i class="mr-3 fas fa-map-marker-alt" style=" color: #4B5368"></i> 35 9 8825 6595</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div>   <div class="col"><i class="mr-3 fas fa-map-marker-alt" style=" color: #4B5368"></i> 35 9 8825 6595</div></div>
+            <div class="row pb-3"><div class="col">Siga nossas redes sociais</div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div>  <div class="col">Siga nossas redes sociais</div></div>
+            <div class="row pb-3 mb-3">
+                <div class="col">
+                    <a style="color:var(--principal)!important"  target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/LivePersonalTrainerCenter"><i class="fab fa-facebook"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Instagram" href="https://www.instagram.com/livectpersonalizado"><i class="fab fa-instagram ml-2 "></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Tiktok" href="https://www.tiktok.com/@livetrainerarvore"><i class="fab fa-tiktok ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/trainer_live"><i class="fab fa-twitter ml-2"></i></a> 
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Youtube" href="https://www.youtube.com/channel/UCqQJwIEtsz0NcBn9qm1DOQw"><i class="fab fa-youtube ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/company/livearvoregrande/ "><i class="fab fa-linkedin ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5535991216399"><i class="fab fa-whatsapp ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Pinterest" href="https://br.pinterest.com/livearvo"><i class="fab fa-pinterest ml-2"></i></a>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div>
+                <div class="col">
+                    <a style="color:var(--principal)!important"  target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/LivePersonalTrainerCenter"><i class="fab fa-facebook"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Instagram" href="https://www.instagram.com/livectpersonalizado"><i class="fab fa-instagram ml-2 "></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Tiktok" href="https://www.tiktok.com/@livetrainerarvore"><i class="fab fa-tiktok ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/trainer_live"><i class="fab fa-twitter ml-2"></i></a> 
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Youtube" href="https://www.youtube.com/channel/UCqQJwIEtsz0NcBn9qm1DOQw"><i class="fab fa-youtube ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/company/livearvoregrande/ "><i class="fab fa-linkedin ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5535991216399"><i class="fab fa-whatsapp ml-2"></i></a>
+                    <a style="color: var(--principal)!important"  target="_blank" rel="noopener" title="Pinterest" href="https://br.pinterest.com/livearvo"><i class="fab fa-pinterest ml-2"></i></a>
+                </div>
+            </div>
+            <div class="row"><div class="col"><span class="info-header-button"> Fale conosco</span> </div><div class="col d-flex align-items-center justify-content-center posiition-absolute" style="font-size: 25px; margin-top: -45px;"></div><div class="col"><span class="info-header-button">Fale conosco</span> </div></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid" >
+        <div class="container-fav d-flex justify-content-center">
+            <span id="foaterbar-background" class="d-lg-flex d-none"></span>
+            <div class="row justify-content-center"  id="foater-bar">
+                <div class="col-4  d-none d-lg-flex align-items-center  d-none d-lg-flex">
+                    <span style="font-size: 25px">Unidades</span>
+                </div>
+                
+                <div class="col-4 d-none d-lg-flex align-items-center justify-content-center" style="cursor: pointer;" onclick="document.getElementById('info-header').style.bottom = 0" >
+                    <i class="fas fa-angle-up"></i> 
+                </div>
+
+                <div class="col-4 d-flex d-lg-none align-items-center justify-content-center"  onclick="document.getElementById('mobileinfocontainer').style.bottom = 0" >
+                    <!-- <i class="fas fa-angle-up"></i>  -->
+                    <i class="fas fa-info-circle" style="color: white;"></i>
+                </div>
+
+                <div class="foater-bar-names col-4  d-none d-lg-flex align-items-center"  style="font-size: 13px ">
+                    <span style="display:flex; align-items: flex-end;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none">
+                        <path d="M7.29639 29.4873H25.2964" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.2964 17.4873C18.5055 17.4873 20.2964 15.6964 20.2964 13.4873C20.2964 11.2782 18.5055 9.4873 16.2964 9.4873C14.0872 9.4873 12.2964 11.2782 12.2964 13.4873C12.2964 15.6964 14.0872 17.4873 16.2964 17.4873Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M26.2964 13.4873C26.2964 22.4873 16.2964 29.4873 16.2964 29.4873C16.2964 29.4873 6.29639 22.4873 6.29639 13.4873C6.29639 10.8351 7.34996 8.2916 9.22532 6.41624C11.1007 4.54087 13.6442 3.4873 16.2964 3.4873C18.9486 3.4873 21.4921 4.54087 23.3675 6.41624C25.2428 8.2916 26.2964 10.8351 26.2964 13.4873V13.4873Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>Centro</span>
+                    <span style="margin-left: 35px; display:flex; align-items: flex-end;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33" fill="none">
+                        <path d="M7.29639 29.4873H25.2964" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.2964 17.4873C18.5055 17.4873 20.2964 15.6964 20.2964 13.4873C20.2964 11.2782 18.5055 9.4873 16.2964 9.4873C14.0872 9.4873 12.2964 11.2782 12.2964 13.4873C12.2964 15.6964 14.0872 17.4873 16.2964 17.4873Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M26.2964 13.4873C26.2964 22.4873 16.2964 29.4873 16.2964 29.4873C16.2964 29.4873 6.29639 22.4873 6.29639 13.4873C6.29639 10.8351 7.34996 8.2916 9.22532 6.41624C11.1007 4.54087 13.6442 3.4873 16.2964 3.4873C18.9486 3.4873 21.4921 4.54087 23.3675 6.41624C25.2428 8.2916 26.2964 10.8351 26.2964 13.4873V13.4873Z" stroke="#F5600F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>Arvore Grande</span>
+                </div> 
+            </div>
+        </div>
+    </div>
+        
+
+    <div id="footer" class="container-fluid py-4" style="margin-top: 300px;">
+        <div class="container-fav" id="footer-fav">
+            <div class="row d-flex justify-content-center justify-content-lg-between">
+                    <div class=""><img src="./img/LiveV Preto e Branco.png" height="61px"></div>
+                    <div class="text-center  col-12 col-lg">
+                        <ul>
+
+                            <li class=""><a href="#">Home</a></li>
+                            <li class=""><a href="#second-header">Quem Somos</a></li>
+                            <li class=""><a href="#seventh-header">Planos</a></li>
+                            <li class=""><a href="#sixth-header">Modalidades</a></li>
+                            <li class=""><a href="#tenth-header">Blog</a></li>
+        
+                        </ul>  
+                    </div>
+                    <div class="d-flex align-items-center  px-4 px-lg-5 my-3 text-center text-lg-center my-lg-0">
+                        <div class="w-100">
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Facebook" href="https://www.facebook.com/LivePersonalTrainerCenter"><svg class="svg-inline--fa fa-facebook fa-w-16 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg><!-- <i class="fab fa-facebook fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Instagram" href="https://www.instagram.com/livectpersonalizado"><svg class="svg-inline--fa fa-instagram fa-w-14 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="fab fa-instagram ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Tiktok" href="https://www.tiktok.com/@livetrainerarvore"><svg class="svg-inline--fa fa-tiktok fa-w-14 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg><!-- <i class="fab fa-tiktok ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/trainer_live"><svg class="svg-inline--fa fa-twitter fa-w-16 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="fab fa-twitter ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a> <br>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Youtube" href="https://www.youtube.com/channel/UCqQJwIEtsz0NcBn9qm1DOQw"><svg class="svg-inline--fa fa-youtube fa-w-18 mt-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i class="fab fa-youtube mt-3  fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/company/livearvoregrande/ "><svg class="svg-inline--fa fa-linkedin fa-w-14 mt-3 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg><!-- <i class="fab fa-linkedin mt-3 ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5535991216399"><svg class="svg-inline--fa fa-whatsapp fa-w-14 mt-3 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg><!-- <i class="fab fa-whatsapp mt-3 ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a>
+                            <a style="color: white!important"  target="_blank" rel="noopener" title="Pinterest" href="https://br.pinterest.com/livearvo"><svg class="svg-inline--fa fa-pinterest fa-w-16 mt-3 ml-3 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"></path></svg><!-- <i class="fab fa-pinterest mt-3 ml-3 fa-lg"></i> Font Awesome fontawesome.com --></a>
+                        </div>
+                    </div>
+            </div>
+            <hr>
+            <div class="row align-items-center justify-content-center justify-content-lg-between"  style="margin-bottom: 75px;" class="d-flex">
+                <div class="">Copyright © 2021 Live Academia</div>
+                <div class="">Desenvolvido por <a title="Clique para visitar o site da Gefit" href="https://7seventrends.com" target="_blank" rel="nofollow noopener"><img class="p-2" src="./img/7seven logo.png" alt=""></a> Com Metodologia <a title="Clique para visitar o site da Gefit" href="https://gefit.com.br" target="_blank" rel="nofollow noopener"><img class="p-2" src="./img/gefit logo.png" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js "></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+</body>
+
+
+</html>
