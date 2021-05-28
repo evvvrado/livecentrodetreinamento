@@ -546,6 +546,11 @@ progress {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#prematricula #header{ 
+  background-image: url(../img/prematriculaheader.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #errocontainer{
   position: absolute;
@@ -580,10 +585,11 @@ progress {
   color: var(--fontcolor);
   text-decoration: none;
   font-size: 13px;
-  transition: ease-in-out 0.32s ;
+  transition: 2s ;
 }
 #topbar  #desktopbar li a:hover{
-  border-bottom: solid 1px var(--principal);
+  color: var(--principal);
+  transform: scale(1.1) ;
 }
 
 
@@ -1510,6 +1516,112 @@ progress {
   position: absolute;
   bottom: -5px;
 }
+#pre-matricula{
+  background-color: var(--background2);
+}
+#pre-matricula form{
+	text-align:left;
+}
+.aviso{
+			color:yellow;
+			opacity:0;
+			height:0;
+			display:block;
+			transition:opacity 0.3s, height 0.4s;
+}
+.exibe{
+			opacity:1;
+			height:50px;
+}
+		
+.bloco{
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+			max-width: 1100px;
+			margin: 0 auto;
+			place-items: center;
+}
+.bloco label{
+			display: inline-block;
+			width: 350px;
+			max-width: 100%;
+}.bloco label:after{
+			margin-top: -24px;
+}
+.bloco label{
+			position:relative;
+			display:block;
+}
+#pre-matricula .valido:after{
+			content:'✔';
+			color:green;
+}
+.invalido:after{
+			content:'✘';
+			color:red;
+}
+.invalido:after{
+			right: 0.25em;
+			position: absolute;
+			margin-top: 17px;
+			font-size: 200%;
+}
+#pre-matricula .select:before{
+			display: block;
+			content: '▾';
+			right: 1.4em;
+			position: absolute;
+			bottom: 1.2em;
+			color: black;
+}
+#pre-matricula .input{
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			appearance: none;
+}
+#pre-matricula span{
+			font-family: var(--fonte2);;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 135%;
+			color: white;
+			width:100%;
+			margin:24px 0 11px 0;
+			display:block;
+			}
+#pre-matricula .input{
+			box-sizing:border-box;
+			background:white;
+			width:100%;
+			border:none;
+			padding:1.4em;
+			font-family: var(--fonte2);
+			font-size: 13px;
+			line-height:110%;
+			height:56px;
+}
+
+#pre-matricula button{
+  padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--background3);
+    background-color: var(--principal);
+}
+
+
+
+#pre-matricula .upper{
+			text-transform:uppercase;
+}
+button.botao{
+			margin-top:38px;
+		}
+	
 
 
 @media (max-width: 991px){
@@ -1623,6 +1735,10 @@ progress {
   #errocontainer{
     position: initial;
     margin-top: 50px;
+  }
+  
+  #pre-matricula button{
+    width:100%;
   }
 
 
