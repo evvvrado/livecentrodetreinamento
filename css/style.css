@@ -1513,12 +1513,36 @@ progress {
   background-color: white;
   width: 50px;
   height: 5px;
+  position: relative;
+  bottom: -85px;
+}
+
+.area-info-active{
+  width: 250px;
+  height: 260px;
+  padding: 50px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--principal);
+}
+
+.area-info-active::after{
+  content: " ";
+  background-color: white;
+  width: 50px;
+  height: 5px;
   position: absolute;
-  bottom: -5px;
+  bottom: 10px;
 }
-#pre-matricula{
-  background-color: var(--background2);
-}
+
+/* #pre-matricula{
+} */
 #pre-matricula form{
 	text-align:left;
 }
