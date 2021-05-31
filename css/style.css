@@ -965,8 +965,6 @@ progress {
   margin: 22.5px;
 }
 #seventh-header{
-  margin-top: -23px;
-
   background-image: url('../img/spam-laranja.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -1388,13 +1386,17 @@ progress {
 #hamburguer:hover{
   color: var(--principal);
 }
-#mobilebarcontainer{transition: linear 0.32s; position: fixed;z-index: 999999; top:-200vh; right: 0; width: 100%; padding: 0;}
+#mobilebarcontainer{transition: linear 0.32s; position: fixed;z-index: 999999; top:-200vh; right: 0; width: 100%; padding: 0; align-content: right;}
 #mobilebar{
-  background-color: var(--background2);
-  height: 100vh;
+  background-color: var(--principal);
+  color: var(--background)!important;
+  height: auto;
+  width:60vw;
   list-style: none;
   padding: 0;
   transition: 0.32s;
+  position: absolute;
+  right: 0;
 }
 
 #mobileinfocontainer{transition: linear 0.32s; position: fixed;z-index: 999999; bottom:-200vh; right: 0; padding: 0; background-color: white; transition: linear 0.32s;}
@@ -1419,14 +1421,14 @@ progress {
 
 #mobilebar li{
   line-height: 65px;
-  padding: 19px;
+  padding: 12px;
   display: inline;
 }
 #mobilebar li a{
-  color: var(--fontcolor)!important;
   text-decoration: none;
   font-size: 13px;
   transition: ease-in-out 0.32s ;
+  color: var(--background);
 }
 #mobilebar li a:hover{
   border-bottom: solid 1px var(--principal);
@@ -1727,7 +1729,7 @@ button.botao{
   }
 
   #second-header-fav svg{
-    width:100%;
+    width:75%;
     height: auto;
   }
   
@@ -1765,6 +1767,10 @@ button.botao{
     width:100%;
   }
 
+  #foaterbar-background{
+    width: 150px;
+    height: 35px;
+  }
 
 }
 
