@@ -248,3 +248,25 @@ const wfform={
 	}
 }
 wfform.init();
+
+
+
+$('#planos').scroll(debounce(function(){
+	var planoLeft = $('#planos').scrollLeft();
+
+	if(planoLeft < 250){		
+		document.getElementById("indi1").setAttribute('fill', "white")
+		document.getElementById("indi2").setAttribute('fill', "#12141D")
+		document.getElementById("indi3").setAttribute('fill', "#12141D")
+	}else if(planoLeft > 250 && planoLeft < 513){
+		document.getElementById("indi1").setAttribute('fill', "#12141D")
+		document.getElementById("indi2").setAttribute('fill', "white")
+		document.getElementById("indi3").setAttribute('fill', "#12141D")
+	}else{		
+		document.getElementById("indi1").setAttribute('fill', "#12141D")
+		document.getElementById("indi2").setAttribute('fill', "#12141D")
+		document.getElementById("indi3").setAttribute('fill', "white")
+	};
+
+	
+}, 100));
